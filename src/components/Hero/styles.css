@@ -1,0 +1,7 @@
+.sectionHero {
+    background-color: var(--color-secondary-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8vh;
+}
