@@ -1,0 +1,71 @@
+@use './reset.css';
+@use './mixin';
+@use './vars';
+
+/*==================== STYLE ========================*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  background-color: vars.$backGround-dark-color;
+  font-family: vars.$main-font;
+  color: vars.$main-font-color;
+}
+
+a {
+  font-weight: 500;
+  color: vars.$backGround-light-color;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: vars.$primary-color;
+}
+
+
+main{
+  margin-top: vars.$headerHeight;
+}
+
+h1 {
+  font-size: 3.2em;
+  color: vars.$main-font-color;
+}
+
+em {
+  color: vars.$primary-color;
+}
+
+
+section {    
+  height: 100vh;
+  width: 100vw;
+  padding: 0.2rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: vars.$primary-light-color;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background-color: vars.$primary-color;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+

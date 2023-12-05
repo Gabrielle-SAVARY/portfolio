@@ -1,5 +1,8 @@
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
 .sectionHero {
-    background-color: var(--color-secondary-dark);
+    background-color: vars.$backGround-dark-color;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,0 +1,10 @@
+
+@use '../../../styles/mixin';
+@use '../../../styles/vars';
+
+@include mixin.breakpoint(desktop) {
+    .header__navbar__btn-menu-mobile {
+        display: none;    
+    }  
+  }
+

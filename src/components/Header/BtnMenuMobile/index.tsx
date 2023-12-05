@@ -1,5 +1,5 @@
 import { FiAlignJustify, FiX } from 'react-icons/fi';
-import './styles.css';
+import './styles.scss';
 
 interface BtnMenuMobileProps {
   isMobileMenuOpen: boolean;

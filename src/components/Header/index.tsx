@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import BtnMenuMobile from './BtnMenuMobile';
-import './styles.css';
+import './styles.scss';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

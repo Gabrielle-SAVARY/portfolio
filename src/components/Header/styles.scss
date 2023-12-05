@@ -1,3 +1,7 @@
+
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
 header {
     width: 100%;
     height: 100vh;
@@ -43,13 +47,13 @@ header {
 
 /*  hover  */
 .nav_links li a:hover {
-    color: var(--color-primary-pop);
+    color: vars.$primary-light-color;
 }
 
 @media (min-width: 992px) {
     header {
         width: 100%;
-        height: var(--headerHeight);
+        height: vars.$headerHeight;
         position: fixed;
         display: flex;
         flex-direction: row;  

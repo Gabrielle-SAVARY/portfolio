@@ -1,7 +1,7 @@
 import Hero from '../Hero';
 import Header from '../Header';
 // import Layout from '../Layout'
-import './styles.css';
+import './styles.scss';
 
 function App() {
   return (
