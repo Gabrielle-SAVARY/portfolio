@@ -10,9 +10,16 @@ function BtnMenuMobile({ changeMobileMenuIcon, isMobileMenuOpen }:BtnMenuMobileP
   const handleChangeToggleMenu = () => {
     changeMobileMenuIcon();
   };
+  const classnameBtnMenuMobile = isMobileMenuOpen ? 'header__navbar__btn-menu-mobile--open' : 'header__navbar__btn-menu-mobile';
+  // Style des icones
+  const styledIconMenu = {
+    strokeWidth: '1', height: '3em', width: '3em',
+  };
   return (
-    <button type="button" className="header__navbar__btn-menu-mobile" onClick={handleChangeToggleMenu}>
-      {isMobileMenuOpen ? <FiX /> : <FiAlignJustify />}
+    <button type="button" className={classnameBtnMenuMobile} onClick={handleChangeToggleMenu}>
+      {isMobileMenuOpen
+        ? <FiX style={styledIconMenu} />
+        : <FiAlignJustify style={styledIconMenu} />}
     </button>
 
   );

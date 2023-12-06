@@ -1,10 +1,16 @@
-
 @use '../../../styles/mixin';
 @use '../../../styles/vars';
 
-@include mixin.breakpoint(desktop) {
-    .header__navbar__btn-menu-mobile {
-        display: none;    
-    }  
-  }
+// BTN ICONE MOBILE
+.header__navbar__btn-menu-mobile {
 
+}
+
+// BTN ICONE MOBILE - MENU MOBILE OUVERT
+.header__navbar__btn-menu-mobile--open {}
+
+@include mixin.breakpoint(desktop) {
+	.header__navbar__btn-menu-mobile {
+		display: none;
+	}
+}

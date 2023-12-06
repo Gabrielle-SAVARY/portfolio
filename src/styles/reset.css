@@ -131,3 +131,12 @@ a {
   text-decoration: none;
   color: black;
 }
+button{
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+button:focus, button:focus-visible, input:focus, textarea:focus, select:focus{
+  outline: none;
+}
