@@ -2,7 +2,8 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-.header {  
+.header { 
+    height: vars.$headerHeight; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;

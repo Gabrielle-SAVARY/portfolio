@@ -1,0 +1,10 @@
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
+.sectionHero {
+    background-color: vars.$backGround-dark-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 8vh;
+}
