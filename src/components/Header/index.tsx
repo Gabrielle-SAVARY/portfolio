@@ -13,11 +13,12 @@ function Header() {
 
   // Logique nom des classe CSS en fonction du toogle menu mobile
   const classnameHeader = isMobileMenuOpen ? 'header--open' : 'header';
+  const classnameHeaderLogo = isMobileMenuOpen ? 'header__logo--open' : 'header__logo';
   const classnameHeaderNavbar = isMobileMenuOpen ? 'header__navbar--open' : 'header__navbar';
 
   return (
     <header className={classnameHeader}>
-      <div className="header__logo"><a href="#/">GS.</a></div>
+      <div className={classnameHeaderLogo}><a href="#/">GS.</a></div>
       <BtnMenuMobile
         changeMobileMenuIcon={changeMobileMenuIcon}
         isMobileMenuOpen={isMobileMenuOpen}

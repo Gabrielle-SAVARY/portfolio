@@ -3,11 +3,26 @@
 
 // BTN ICONE MOBILE
 .header__navbar__btn-menu-mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 2.5rem;
 
 }
 
 // BTN ICONE MOBILE - MENU MOBILE OUVERT
-.header__navbar__btn-menu-mobile--open {}
+.header__navbar__btn-menu-mobile--open {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 2.5rem;
+	position: fixed;
+	top:12px;  //12px = padding header (4rem headerHeight/2) - (2.5rem BtnHeight/2)--> 0.75rem = 12px
+	right: 32px;
+
+}
 
 @include mixin.breakpoint(desktop) {
 	.header__navbar__btn-menu-mobile {

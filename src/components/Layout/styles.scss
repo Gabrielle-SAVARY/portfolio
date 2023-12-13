@@ -1,10 +1,20 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-.sectionHero {
-    background-color: vars.$backGround-dark-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 8vh;
+.app__container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app__content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: vars.$headerHeight;
+
+	@include mixin.breakpoint(desktop) {
+		margin-top: calc(vars.$headerHeight *2);
+	}
 }

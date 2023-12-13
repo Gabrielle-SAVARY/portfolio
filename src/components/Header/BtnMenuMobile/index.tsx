@@ -13,7 +13,7 @@ function BtnMenuMobile({ changeMobileMenuIcon, isMobileMenuOpen }:BtnMenuMobileP
   const classnameBtnMenuMobile = isMobileMenuOpen ? 'header__navbar__btn-menu-mobile--open' : 'header__navbar__btn-menu-mobile';
   // Style des icones
   const styledIconMenu = {
-    strokeWidth: '1', height: '3em', width: '3em',
+    strokeWidth: '1.8', height: '1.5rem', width: '1.5rem',
   };
   return (
     <button type="button" className={classnameBtnMenuMobile} onClick={handleChangeToggleMenu}>
