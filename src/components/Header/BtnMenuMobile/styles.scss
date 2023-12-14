@@ -8,6 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 2.5rem;
+	color: vars.$primary-color;
 
 }
 
@@ -21,6 +22,7 @@
 	position: fixed;
 	top:12px;  //12px = padding header (4rem headerHeight/2) - (2.5rem BtnHeight/2)--> 0.75rem = 12px
 	right: 32px;
+	color: vars.$secondary-color;	
 
 }
 

@@ -2,9 +2,48 @@
 @use '../../styles/vars';
 
 .sectionHero {
-    background-color: vars.$backGround-dark-color;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 8vh;
+	background-color: vars.$backGround-dark-color;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 8vh;
+}
+
+.presentation__btns {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 2.5rem;
+	margin-top: 2.5rem;
+}
+
+.presentation__heading{
+width: 70%;
+}
+
+.presentation__heading__hello {
+	color: vars.$main-font-color;
+	// font-family: Poppins;
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.presentation__heading__title {
+	color: vars.$main-font-color;
+	// font-family: Poppins;
+	font-size: 4rem;
+	font-weight: 700;
+	line-height: 125%; /* 80px */
+}
+
+.presentation__texts {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 1rem;
+	margin: 2.5rem 0 1.25rem 0;
 }

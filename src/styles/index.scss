@@ -15,14 +15,18 @@ body {
   display: flex;
   flex-flow: column;
   background-color: vars.$backGround-dark-color;
+  //FONT
   font-family: vars.$main-font;
   color: vars.$main-font-color;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
 }
 
 a {
   font-weight: 500;
   color: vars.$backGround-light-color;
-  text-decoration: inherit;  
+  text-decoration: inherit;
 }
 
 a:hover {
@@ -31,7 +35,7 @@ a:hover {
 
 
 main {
-
+  padding: 1rem;
 }
 
 h1 {
@@ -50,17 +54,70 @@ section {
   padding: 0.2rem;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 5px 10px;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: vars.$primary-light-color;
+// button {
+//   border-radius: 8px;
+//   border: 1px solid transparent;
+//   padding: 5px 10px;
+//   font-size: 1em;
+//   font-weight: 500;
+//   font-family: inherit;
+//   // background-color: vars.$primary-light-color;
+//   transition: border-color 0.25s;
+// }
+
+// button:hover {
+//   background-color: vars.$primary-color;
+// }
+
+.btn{
+  display: flex;
+  height: 48px;
+  padding: 12px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   transition: border-color 0.25s;
 }
 
-button:hover {
-  background-color: vars.$primary-color;
+.btn--primary {
+  border: 2px solid #EFC42B;
+  background: #EFC42B;
+  color: #192730;
+}
+
+.btn--primary:hover {
+  background: #192730;
+  color: #EFC42B;
+  transition: border-color 0.25s;
+}
+
+.btn--secondary {
+  border: 2px solid #EFC42B;
+  background: #192730;
+  color: #EFC42B;
+
+}
+
+.btn--secondary:hover {
+  background: #EFC42B;
+  color: #192730;
+  transition: border-color 0.25s;
+}
+
+.typography--btn {
+  // font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.typography--normal {
+  color: vars.$main-font-color;
+  // font-family: Poppins;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: normal;
 }
