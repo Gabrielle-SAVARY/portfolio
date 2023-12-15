@@ -1,25 +1,18 @@
-import HeroImg from '../../assets/images/bg-pc-vert.png';
-import HeroImg2 from '../../assets/images/coding-amico_storyset.png';
-import HeroImg3 from '../../assets/images/bg-pc-vert-removebg.png';
-import HeroImg4 from '../../assets/images/image17 - Copie.png';
-import HeroImg5 from '../../assets/images/image17.png';
-import HeroImg6 from '../../assets/images/background12-crop-miror.png';
-
 import './styles.scss';
 
-function Hero() {
+function MyProjects() {
   return (
-    <section id="sectionHero" className="sectionOne">
-      <div className="presentation">
+    <section id="sectionMyProjects" className="sectionTwo">
+      <div className="myProjects__container">
         <div className="presentation__heading">
           <p className="presentation__heading__hello">
             Bonjour, je suis Gabrielle SAVARY,
           </p>
-          <h1 className="presentation__heading__title">
+          <h2 className="presentation__heading__title">
             Développeuse web
             {' '}
             <em>React/Fullstack</em>
-          </h1>
+          </h2>
         </div>
         <div className="presentation__texts">
           <p className="presentation__text__paragraph">
@@ -38,12 +31,8 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-img__container">
-        <img className="hero-img__image" src={HeroImg6} alt="anime girl portrait with headphone" />
-      </div>
-
     </section>
   );
 }
 
-export default Hero;
+export default MyProjects;

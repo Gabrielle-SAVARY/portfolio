@@ -1,15 +1,12 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-#sectionHero {
+.sectionHero {
 	background-color: vars.$backGround-dark-color;
 	display: flex;
-	flex-direction: row;
-	padding-left: 1rem;
-}
-
-.presentation{
-	width: 70%;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 8vh;
 }
 
 .presentation__btns {
@@ -22,7 +19,7 @@
 }
 
 .presentation__heading{
-width: 50%;
+width: 70%;
 }
 
 .presentation__heading__hello {
@@ -49,38 +46,4 @@ width: 50%;
 	align-items: flex-start;
 	gap: 1rem;
 	margin: 2.5rem 0 1.25rem 0;
-}
-
-.hero-img__container {
-display : none;	
-}
-
-.hero-img__image{
-	// max-height: 348px;
-	// max-width: 348px;
-	// min-height: 148px;
-	// min-width: 148px;
-	// width: 348px;
-	// height: 348px;
-
-	max-height: 648px;
-	max-width: 648px;
-	min-height: 148px;
-	min-width: 148px;
-	object-fit: contain;
-	overflow: hidden;
-
-}
-
-
-@include mixin.breakpoint(desktop) {
-	.presentation__heading{
-		width: 50%;
-		}
-	.hero-img__container {
-		width: 50%;
-		display: flex;
-		justify-content: flex-end;
-		align-items: flex-start;
-	}
 }
