@@ -1,6 +1,7 @@
 import Hero from '../Hero';
 
 import Layout from '../Layout';
+import MyProjects from '../MyProjects';
 import './styles.scss';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <Layout>
       <main>
         <Hero />
+        <MyProjects />
       </main>
     </Layout>
   );
