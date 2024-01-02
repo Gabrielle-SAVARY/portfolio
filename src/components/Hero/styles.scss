@@ -9,7 +9,8 @@
 }
 
 .presentation{
-	width: 70%;
+	width: 100%;
+	overflow-wrap: break-word;
 }
 
 .presentation__btns {
@@ -22,7 +23,9 @@
 }
 
 .presentation__heading{
-width: 50%;
+width: 100%;
+max-width: 100%;
+
 }
 
 .presentation__heading__hello {
@@ -37,7 +40,7 @@ width: 50%;
 .presentation__heading__title {
 	color: vars.$main-font-color;
 	// font-family: Poppins;
-	font-size: 4rem;
+	font-size: 2.75rem;
 	font-weight: 700;
 	line-height: 125%; /* 80px */
 }
@@ -76,8 +79,12 @@ display : none;
 @include mixin.breakpoint(desktop) {
 	.presentation__heading{
 		width: 50%;
-		}
+	}
+	.presentation__heading__title {
+		font-size: 4rem;
+	}
 	.hero-img__container {
+		overflow: hidden;
 		width: 50%;
 		display: flex;
 		justify-content: flex-end;
