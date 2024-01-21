@@ -1,4 +1,5 @@
 import Header from '../Header';
+import Footer from '../Footer';
 import './styles.scss';
 
 interface LayoutProps {
@@ -10,6 +11,7 @@ function Layout({ children }:LayoutProps) {
     <div className="app__container">
       <Header />
       <div className="app__content">{children}</div>
+      <Footer />
     </div>
   );
 }

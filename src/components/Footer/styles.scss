@@ -1,0 +1,9 @@
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
+.footer {
+    background-color: vars.$backGround-dark-color;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+}
