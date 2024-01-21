@@ -4,6 +4,17 @@
 .footer {
     background-color: vars.$backGround-dark-color;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2.5rem;
+}
+
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo-portfolio {
+    width: 80px;
+    height: 34px;
 }
