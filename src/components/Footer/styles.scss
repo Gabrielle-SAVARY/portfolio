@@ -4,7 +4,9 @@
 .footer {
     background-color: vars.$backGround-dark-color;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2.5rem;
     gap: 2.5rem;
 }
@@ -33,6 +35,9 @@
 }
 
 .social-media-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 8px;
 }
 
@@ -56,4 +61,10 @@
 }
 .link-color_primary:hover {
     color: vars.$tertiary-color;
+}
+
+
+.footer__copyright-text {
+    font-size: 1rem;
+    font-weight: 300;
 }

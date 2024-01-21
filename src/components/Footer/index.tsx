@@ -12,6 +12,9 @@ function Footer() {
           <SocialMedia mediaName="github" mediaLink="#" mediaIconColor="white" />
         </div>
       </div>
+      <div className="footer__copyright">
+        <p className="footer__copyright-text">© 2023 Gabrielle Savary</p>
+      </div>
     </footer>
 
   );
