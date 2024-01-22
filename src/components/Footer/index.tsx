@@ -6,10 +6,12 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__logo">
-        <img className="footer__logo-portfolio" src={portfolioLogo} alt="logo du portfolio avec initiales" />
+        <a href="/">
+          <img className="footer__logo-portfolio" src={portfolioLogo} alt="logo du portfolio avec initiales" />
+        </a>
         <div className="footer__logo-social-media">
-          <SocialMedia mediaName="linkedin" mediaLink="#" mediaIconColor="white" />
-          <SocialMedia mediaName="github" mediaLink="#" mediaIconColor="white" />
+          <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="white" />
+          <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="white" />
         </div>
       </div>
       <div className="footer__copyright">
