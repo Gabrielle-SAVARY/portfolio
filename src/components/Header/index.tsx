@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
+import portfolioLogo from '../../assets/images/portfolio-logo.png';
 import './styles.scss';
 
 function Header() {
@@ -19,7 +20,7 @@ function Header() {
 
   return (
     <header className={classnameHeader}>
-      <div className={classnameHeaderLogo}><a href="#/">GS.</a></div>
+      <a href="/"><img className={classnameHeaderLogo} src={portfolioLogo} alt="logo du portfolio avec initiales" /></a>
       <BtnMenuMobile
         changeMobileMenuIcon={changeMobileMenuIcon}
         isMobileMenuOpen={isMobileMenuOpen}
@@ -31,9 +32,9 @@ function Header() {
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li><SocialMedia mediaName="linkedin" mediaLink="#" mediaIconColor="white" /></li>
           <li><SocialMedia mediaName="github" mediaLink="#" mediaIconColor="white" /></li>
-          {/* <li>
+          <li>
             <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
-          </li> */}
+          </li>
         </ul>
 
       </nav>
