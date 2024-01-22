@@ -34,7 +34,7 @@ function Hero() {
         </div>
         <div className="presentation__btns">
           <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
-          <button type="button"><a href="#sectionMyProjects" className="btn btn--secondary typography--btn">Mes projets</a></button>
+          <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary typography--btn">Mon portfolio</a></button>
         </div>
       </div>
 

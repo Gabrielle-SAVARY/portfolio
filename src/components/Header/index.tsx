@@ -29,7 +29,7 @@ function Header() {
       />
       <nav className={classnameHeaderNavbar}>
         <ul className="header__navbar__menu-links">
-          <li><a href="#sectionMyProjects">portfolio</a></li>
+          <li><a href="#sectionPortfolio">portfolio</a></li>
           <li><a href="#sectionAbout">À propos</a></li>
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li>
