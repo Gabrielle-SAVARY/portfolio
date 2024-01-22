@@ -1,3 +1,4 @@
+import About from '../About';
 import Hero from '../Hero';
 import Layout from '../Layout';
 import Portfolio from '../Portfolio';
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Hero />
         <Portfolio />
+        <About />
       </main>
     </Layout>
   );

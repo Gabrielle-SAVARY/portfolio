@@ -1,0 +1,36 @@
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
+
+#sectionAbout {
+	background-color: vars.$secondary-color;
+	padding-top: vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+
+}
+
+.about{
+	padding-top: 2.5rem;
+
+	&__image{
+		display: flex;
+		justify-content: center;
+		&-portrait{
+			max-height: 228px;
+			max-width: 228px;
+			min-height: 148px;
+			min-width: 148px;
+			object-fit: cover;
+			clip-path: circle(50%);	
+	
+			@include mixin.breakpoint(desktop) {
+				max-height: 348px;
+				max-width: 348px;
+				min-height: 148px;
+				min-width: 148px;
+			}
+		}
+	}
+
+	
+}
+

@@ -56,6 +56,13 @@ section {
   padding: 0.2rem;
 }
 
+.section-title{
+  color:vars.$primary-color;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 // button {
 //   border-radius: 8px;
 //   border: 1px solid transparent;
