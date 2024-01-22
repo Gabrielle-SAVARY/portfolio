@@ -55,12 +55,14 @@
 }
 
 .header__logo--open {
-    height:2.5rem;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    top: 12px;
-    left: 32px;
+    display:none;
+    
+    // height:2.5rem;
+    // position: fixed;
+    // display: flex;
+    // align-items: center;
+    // top: 12px;
+    // left: 32px;
 }
 
 // LISTE MENU
@@ -84,10 +86,19 @@
 }
 
 .header__navbar__menu-links__separator{
-    width: 2px;
-    height: 2rem;
-    background-color: vars.$tertiary-color;
+    width: 4rem;
+    height: 2px;
+    background-color: vars.$secondary-color;
 }
+
+.header__navbar__menu-links__social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
 /*transition menu*/
 .nav_links li a {
     transition: all 0.3s ease 0s;
@@ -121,6 +132,12 @@
         flex-direction: row;
         align-items: center;
         flex-grow: 1;
+    }
+
+    .header__navbar__menu-links__separator{
+        width: 2px;
+        height: 2rem;
+        background-color: vars.$tertiary-color;
     }
 
 }

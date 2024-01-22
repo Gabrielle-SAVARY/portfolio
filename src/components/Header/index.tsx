@@ -20,7 +20,9 @@ function Header() {
 
   return (
     <header className={classnameHeader}>
-      <a href="/"><img className={classnameHeaderLogo} src={portfolioLogo} alt="logo du portfolio avec initiales" /></a>
+      <a href="/">
+        <img className={classnameHeaderLogo} src={portfolioLogo} alt="logo du portfolio avec initiales" />
+      </a>
       <BtnMenuMobile
         changeMobileMenuIcon={changeMobileMenuIcon}
         isMobileMenuOpen={isMobileMenuOpen}
@@ -30,8 +32,12 @@ function Header() {
           <li><a href="#sectionMyProjects">portfolio</a></li>
           <li><a href="#sectionAbout">À propos</a></li>
           <li><div className="header__navbar__menu-links__separator" /></li>
-          <li><SocialMedia mediaName="linkedin" mediaLink="#" mediaIconColor="white" /></li>
-          <li><SocialMedia mediaName="github" mediaLink="#" mediaIconColor="white" /></li>
+          <li>
+            <div className="header__navbar__menu-links__social-media">
+              <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="white" />
+              <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="white" />
+            </div>
+          </li>
           <li>
             <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
           </li>
