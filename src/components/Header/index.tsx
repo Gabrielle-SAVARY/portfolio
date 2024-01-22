@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import BtnMenuMobile from './BtnMenuMobile';
+import SocialMedia from '../SocialMedia';
 import './styles.scss';
 
 function Header() {
@@ -25,11 +26,16 @@ function Header() {
       />
       <nav className={classnameHeaderNavbar}>
         <ul className="header__navbar__menu-links">
-          <li><a href="#sectionHero">Accueil</a></li>
+          <li><a href="#sectionMyProjects">portfolio</a></li>
           <li><a href="#sectionAbout">À propos</a></li>
-          <li><a href="#sectionMyProjects">Mes Projets</a></li>
-          <li><a href="#sectionContact">Me contacter</a></li>
+          <li><div className="header__navbar__menu-links__separator" /></li>
+          <li><SocialMedia mediaName="linkedin" mediaLink="#" mediaIconColor="white" /></li>
+          <li><SocialMedia mediaName="github" mediaLink="#" mediaIconColor="white" /></li>
+          {/* <li>
+            <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
+          </li> */}
         </ul>
+
       </nav>
     </header>
 
