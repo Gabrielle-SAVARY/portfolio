@@ -5,7 +5,9 @@
 	background-color: vars.$backGround-dark-color;
 	display: flex;
 	flex-direction: row;
-	padding-left: 1rem;
+	@include mixin.breakpoint(desktop) {
+		padding-right: 0;
+	}
 }
 
 .presentation{

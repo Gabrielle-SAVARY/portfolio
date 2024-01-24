@@ -4,24 +4,36 @@
 
 #sectionAbout {
 	background-color: vars.$secondary-color;
-	padding-top: vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+	padding-top: vars.$headerHeight;
+	/* Compense la hauteur de l'en-tête pour centrer le container*/
 
 }
 
-.about{
-	padding-top: 2.5rem;
+.about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap:3rem;
 
-	&__image{
+	@include mixin.breakpoint(desktop) {
+		flex-direction: row;
+		gap: 6rem;
+	}
+
+
+	&__image {
 		display: flex;
 		justify-content: center;
-		&-portrait{
+
+		&-portrait {
 			max-height: 228px;
 			max-width: 228px;
 			min-height: 148px;
 			min-width: 148px;
 			object-fit: cover;
-			clip-path: circle(50%);	
-	
+			clip-path: circle(50%);
+
 			@include mixin.breakpoint(desktop) {
 				max-height: 348px;
 				max-width: 348px;
@@ -31,6 +43,32 @@
 		}
 	}
 
-	
-}
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
 
+		&__text{
+			text-align: justify;
+			font-size: 1rem;
+		}
+
+		&__links {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 1.5rem;
+			margin-top: 1.25rem;	
+
+			@include mixin.breakpoint(desktop) {
+				width: 100%;
+				flex-direction: row;
+				justify-content: flex-start;
+			}
+		}
+	}
+
+}
