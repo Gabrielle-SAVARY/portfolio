@@ -1,3 +1,4 @@
+import { AiFillLinkedin } from 'react-icons/ai';
 import HeroImg from '../../assets/images/bg-pc-vert.png';
 import HeroImg2 from '../../assets/images/coding-amico_storyset.png';
 import HeroImg3 from '../../assets/images/bg-pc-vert-removebg.png';
@@ -28,12 +29,20 @@ function Hero() {
             <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
           </p>
           <p className="presentation__text__paragraph">
-            J&apos;habite en Charente-Maritime tout en étant mobile.
-            Je suis ouverte par débuter par un stage de plusieurs mois.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, autem veritatis fugit quam enim amet facere eaque similique minima sint consectetur optio, ipsum exercitationem, consequuntur blanditiis! Nam similique blanditiis maxime?
           </p>
         </div>
-        <div className="presentation__btns">
-          <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
+        <div className="presentation__links">
+          <a
+            href="https://www.linkedin.com/in/gabrielle-savary/"
+            className="link link--primary typography--link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            me contacter
+            {' '}
+            <AiFillLinkedin style={{ fontSize: '26px', color: 'inherit' }} />
+          </a>
           <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary typography--btn">Mon portfolio</a></button>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { AiFillLinkedin } from 'react-icons/ai';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
 import portfolioLogo from '../../assets/images/portfolio-logo.png';
@@ -37,9 +38,6 @@ function Header() {
               <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="white" />
               <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="white" />
             </div>
-          </li>
-          <li>
-            <button type="button"><a href="#sectionContact" className="btn btn--primary typography--btn">me contacter</a></button>
           </li>
         </ul>
 

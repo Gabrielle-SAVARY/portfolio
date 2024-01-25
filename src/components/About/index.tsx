@@ -17,7 +17,7 @@ function About() {
           <div className="about__container__links">
             <a
               href={CV}
-              className="link link--primary typography--link"
+              className="link link--secondary typography--link"
               target="_blank"
               rel="noreferrer"
             >
@@ -36,7 +36,7 @@ function About() {
             </a>
             <a
               href="https://www.linkedin.com/in/gabrielle-savary/"
-              className="link link--secondary typography--link"
+              className="link link--primary typography--link"
               target="_blank"
               rel="noreferrer"
             >
