@@ -1,15 +1,10 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-.sectionHero {
-	background-color: vars.$backGround-dark-color;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 8vh;
-}
 #sectionPortfolio {
-	background-color: vars.$secondary-color;
-	padding-top: vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+	background-color: vars.$backGround-light-color2;
+	padding-top: vars.$headerHeight;
+	/* Compense la hauteur de l'en-tête pour centrer le container*/
 
 }
+
