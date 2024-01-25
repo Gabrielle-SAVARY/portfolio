@@ -14,7 +14,7 @@ function Hero() {
       <div className="presentation">
         <div className="presentation__heading">
           <p className="presentation__heading__hello">
-            Bonjour, je suis Gabrielle SAVARY,
+            Bonjour, je suis
           </p>
           <h1 className="presentation__heading__title">
             Développeuse web
@@ -24,12 +24,13 @@ function Hero() {
         </div>
         <div className="presentation__texts">
           <p className="presentation__text__paragraph">
+            Je m&apos;appelle Gabrielle Savary.
             Je travaille sur un environnement fullstack javascript avec React et Node.js.
             <br />
             <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
           </p>
           <p className="presentation__text__paragraph">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, autem veritatis fugit quam enim amet facere eaque similique minima sint consectetur optio, ipsum exercitationem, consequuntur blanditiis! Nam similique blanditiis maxime?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, autem veritatis fugi.
           </p>
         </div>
         <div className="presentation__links">

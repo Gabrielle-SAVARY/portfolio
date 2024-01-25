@@ -5,9 +5,12 @@
 	background-color: vars.$backGround-dark-color;
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	
 	@include mixin.breakpoint(desktop) {
+		justify-content: space-between;
 		padding-right: 0;
-	}
+		}
 }
 
 .presentation{
@@ -16,84 +19,89 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
-}
-
-.presentation__links {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: 2.5rem;
-	margin-top: 2.5rem;
-}
-
-.presentation__heading{
-width: 100%;
-max-width: 100%;
-
-}
-
-.presentation__heading__hello {
-	color: vars.$main-font-color;
-	// font-family: Poppins;
-	font-size: 1.5rem;
-	font-weight: 500;
-	line-height: normal;
-	text-transform: uppercase;
-}
-
-.presentation__heading__title {
-	color: vars.$main-font-color;
-	// font-family: Poppins;
-	font-size: 2.75rem;
-	font-weight: 700;
-	line-height: 125%; /* 80px */
-}
-
-.presentation__texts {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
-	gap: 1rem;
-	margin: 2.5rem 0 1.25rem 0;
-}
-
-.hero-img__container {
-display : none;	
-}
-
-.hero-img__image{
-	// max-height: 348px;
-	// max-width: 348px;
-	// min-height: 148px;
-	// min-width: 148px;
-	// width: 348px;
-	// height: 348px;
-
-	max-height: 648px;
-	max-width: 648px;
-	min-height: 148px;
-	min-width: 148px;
-	object-fit: contain;
-	overflow: hidden;
-
-}
-
-
-@include mixin.breakpoint(desktop) {
-	.presentation__heading__title {
-		font-size: 4rem;
+	
+	@include mixin.breakpoint(tablet) {
 	}
-	.hero-img__container {
-		overflow: hidden;
+	@include mixin.breakpoint(desktop) {		
 		width: 50%;
+		align-items: flex-start;
+	}
+
+	&__links {
 		display: flex;
-		justify-content: center;
-		align-items: flex-end;
+		flex-wrap: wrap;
 		flex-direction: column;
-		margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+		justify-content: center;
+		gap: 2.5rem;
+		margin-top: 2.5rem;
+
+		@include mixin.breakpoint(tablet) {
+			width:100%;
+			flex-direction: row;
+			justify-content: flex-start;
+
+		}
+	}
+
+	&__heading{
+	width: 100%;
+	max-width: 100%;
+	
+		&__hello {
+			color: vars.$main-font-color;
+			font-size: 1.5rem;
+			font-weight: 500;
+			line-height: normal;
+		}
+	
+		&__title {
+			color: vars.$main-font-color;
+			// font-family: Poppins;
+			font-size: 2.75rem;
+			font-weight: 700;
+			line-height: 125%; /* 80px */
+
+			@include mixin.breakpoint(desktop) {
+				font-size: 4rem;
+			}
+		}
+	}
+
+	&__texts {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		gap: 1rem;
+		margin: 2.5rem 0 1.25rem 0;
+		text-align: justify;
 	}
 }
+
+.hero-img {
+	&__container{
+		display : none;	
+
+		@include mixin.breakpoint(desktop) {
+			overflow: hidden;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			flex-direction: column;
+			margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+		}
+	}
+
+	&__image{
+		max-height: 648px;
+		max-width: 648px;
+		min-height: 148px;
+		min-width: 148px;
+		object-fit: contain;
+		overflow: hidden;	
+	}
+}
+
