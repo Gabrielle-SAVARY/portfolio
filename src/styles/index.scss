@@ -17,7 +17,8 @@ body {
   display: flex;
   flex-flow: column;
   background-color: vars.$backGround-dark-color;
-  //FONT
+
+  // FONT
   font-family: vars.$main-font;
   color: vars.$main-font-color;
   font-size: 1.25rem;
@@ -25,30 +26,11 @@ body {
   line-height: normal;
 }
 
-a {
-  font-weight: 500;
-  color: vars.$backGround-light-color;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: vars.$primary-color;
-}
-
-
-main {
-
-}
-
+//TITLES
 h1 {
   font-size: 3em;
   color: vars.$main-font-color;
 }
-
-em {
-  color: vars.$primary-color;
-}
-
 
 section {
   min-height: 100vh;
@@ -67,21 +49,7 @@ section {
   margin-bottom: 2.5rem ;
 }
 
-// button {
-//   border-radius: 8px;
-//   border: 1px solid transparent;
-//   padding: 5px 10px;
-//   font-size: 1em;
-//   font-weight: 500;
-//   font-family: inherit;
-//   // background-color: vars.$primary-light-color;
-//   transition: border-color 0.25s;
-// }
-
-// button:hover {
-//   background-color: vars.$primary-color;
-// }
-
+// BOUTONS
 .btn{
   display: flex;
   height: 48px;
@@ -91,6 +59,17 @@ section {
   align-items: center;
   gap: 10px;
   transition: border-color 0.25s;
+}
+
+// LIENS
+a {
+  font-weight: 500;
+  color: vars.$backGround-light-color;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: vars.$primary-color;
 }
 
 .link{
@@ -104,7 +83,7 @@ section {
   transition: border-color 0.25s;
 }
 
-
+// LIENS BOUTONS - COULEURS 
 .btn--primary, .link--primary {
   border: 2px solid #EFC42B;
   background: #EFC42B;
@@ -130,13 +109,24 @@ section {
   transition: border-color 0.25s;
 }
 
-.typography--btn, .typography--link {
-  // font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
+// LIENS - COULEURS ICONES 
+.link-color_white {
+  color: vars.$tertiary-color;
+}
+.link-color_white:hover {
+  color: vars.$primary-color;
+}
+
+.link-color_primary{
+  color: vars.$primary-color;
+}
+.link-color_primary:hover {
+  color: vars.$tertiary-color;
+}
+
+//TYPOGRAPHY
+em {
+  color: vars.$primary-color;
 }
 
 .typography--normal {
@@ -145,6 +135,15 @@ section {
   font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
+}
+
+.typography--btn, .typography--link {
+  // font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 
