@@ -1,0 +1,15 @@
+.social-media {
+	&__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		transition: all 0.2s ease-in-out;
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 8px;
+	}
+}

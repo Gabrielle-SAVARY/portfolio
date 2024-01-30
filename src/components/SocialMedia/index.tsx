@@ -29,7 +29,7 @@ function SocialMedia({ mediaName, mediaLink, mediaIconColor }: SocialMediaProps)
       rel="noreferrer"
       className={`social-media__link link-color_${mediaIconColor}`}
     >
-      <div className={`social-media-icon ${socialMediaName}`}>
+      <div className={`social-media__icon ${socialMediaName}`}>
         {socialMediaIcon(mediaName)}
 
       </div>
