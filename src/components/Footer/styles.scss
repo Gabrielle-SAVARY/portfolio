@@ -9,62 +9,40 @@
     align-items: center;
     padding: 2.5rem;
     gap: 2.5rem;
-}
 
-.footer__logo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    width: 100%;
-}
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+        width: 100%;
 
-.footer__logo-portfolio {
-    width: 80px;
-    height: 36px;
-}
+        &-portfolio {
+            width: 80px;
+            height: 36px;
+        }
 
-.footer__logo-social-media {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:1rem;
-}
+        &-social-media{
+            width: fit-content;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+        }
+    }
 
-.social-media-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px;
-}
-
-.social-media__link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
-}
-
-// LIENS COULEURS - CHANGENT COULEURS DES ICONES
-.link-color_white {
-    color: vars.$tertiary-color;
-}
-.link-color_white:hover {
-    color: vars.$primary-color;
-}
-
-.link-color_primary{
-    color: vars.$primary-color;
-}
-.link-color_primary:hover {
-    color: vars.$tertiary-color;
+    &__copyright-text {
+        font-size: 1rem;
+        font-weight: 300;
+    }
 }
 
 
-.footer__copyright-text {
-    font-size: 1rem;
-    font-weight: 300;
-}
+
+
+
+
+
+
