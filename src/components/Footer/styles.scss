@@ -2,7 +2,7 @@
 @use '../../styles/vars';
 
 .footer {
-    background-color: vars.$backGround-dark-color2;
+    background-color: vars.$footer-backGround-color;
     display: flex;
     flex-direction: column;
     justify-content: center;

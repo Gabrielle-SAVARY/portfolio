@@ -1,24 +1,20 @@
-// COULEURS v1
-$primary-color: #EFC42B;
-$secondary-color: #192730;
-$tertiary-color: #f9f9f9;
+// COULEURS 
+$primary-color: #192730;
+$secondary-color: #f9f3f0;
 
-// COULEURS v2
-// $primary-color: #ec665c;
-// $primary-light-color: #ffa89d;
-// $secondary-color: #15393e;
-// $secondary-dark-color: #18262f;
-// $tertiary-color: #EFC42B;
+$highlight-color:#FF846D;
+$highlight-color2:#EFC42B;
 
-// BACKGROUND
-$backGround-dark-color: #192730;
-$backGround-dark-color2: #282828;
-// $backGround-dark-color2: #18262f;
-$backGround-light-color: #f9f9f9;
-$backGround-light-color2: #FFEFCA;
+// ALTERNATIVE LIGHT
+$light-color: #f9f9f9;
+$light-color2: #FFEFCA;
+
+// ALTERNATIVE DARK
+$footer-backGround-color: #282828;
 
 //POLICES
 $main-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-$main-font-color: #f9f9f9;
+$main-font-color: #f9f3f0;
+
 //TAILLES
 $headerHeight: 4rem;

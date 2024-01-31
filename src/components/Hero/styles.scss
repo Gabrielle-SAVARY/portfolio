@@ -2,7 +2,7 @@
 @use '../../styles/vars';
 
 #sectionHero {
-	background-color: vars.$backGround-dark-color;
+	background-color: vars.$primary-color;
 	display: flex;
 	flex-direction: row;
 	align-items: center;

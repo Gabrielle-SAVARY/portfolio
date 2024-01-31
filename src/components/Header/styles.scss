@@ -26,11 +26,11 @@
     z-index: 1;
     background-color: rgba(24, 38, 47, 0.9);
     backdrop-filter: blur(2px);
-    background-color: vars.$primary-color;
+    background-color: vars.$highlight-color;
 }
 
 .header--open a {
-    color: vars.$secondary-color;
+    color: vars.$primary-color;
 }
 
 /*HEADER BAR MENU*/
@@ -92,7 +92,7 @@
 .header__navbar__menu-links__separator{
     width: 4rem;
     height: 2px;
-    background-color: vars.$secondary-color;
+    background-color: vars.$primary-color;
 }
 
 .header__navbar__menu-links__social-media{
@@ -110,7 +110,7 @@
 
 /*  hover  */
 .nav_links li a:hover {
-    color: vars.$primary-color;
+    color: vars.$highlight-color;
 }
 
 
@@ -141,7 +141,7 @@
     .header__navbar__menu-links__separator{
         width: 2px;
         height: 2rem;
-        background-color: vars.$tertiary-color;
+        background-color: vars.$secondary-color;
     }
 
 }

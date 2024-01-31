@@ -16,7 +16,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-flow: column;
-  background-color: vars.$backGround-dark-color;
+  background-color: vars.$primary-color;
 
   // FONT
   font-family: vars.$main-font;
@@ -41,13 +41,21 @@ section {
   }
 }
 
-.section-title{
-  color:vars.$primary-color;
+h2{
+  color:vars.$highlight-color;
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2.5rem ;
 }
+
+// .section-title{
+//   color:vars.$highlight-color;
+//   font-size: 2rem;
+//   text-align: center;
+//   text-transform: uppercase;
+//   margin-bottom: 2.5rem ;
+// }
 
 // BOUTONS
 .btn{
@@ -64,12 +72,12 @@ section {
 // LIENS
 a {
   font-weight: 500;
-  color: vars.$backGround-light-color;
+  color: vars.$secondary-color;
   text-decoration: inherit;
 }
 
 a:hover {
-  color: vars.$primary-color;
+  color: vars.$highlight-color;
 }
 
 .link{
@@ -85,48 +93,48 @@ a:hover {
 
 // LIENS BOUTONS - COULEURS 
 .btn--primary, .link--primary {
-  border: 2px solid #EFC42B;
-  background: #EFC42B;
+  border: 2px solid vars.$highlight-color;
+  background: vars.$highlight-color;
   color: #192730;
 }
 
 .btn--primary:hover, .link--primary:hover {
   background: #192730;
-  color: #EFC42B;
+  color: vars.$highlight-color;
   transition: border-color 0.25s;
 }
 
 .btn--secondary, .link--secondary {
-  border: 2px solid #EFC42B;
+  border: 2px solid vars.$highlight-color;
   background: #192730;
-  color: #EFC42B;
+  color: vars.$highlight-color;
 
 }
 
 .btn--secondary:hover, .link--secondary:hover {
-  background: #EFC42B;
+  background: vars.$highlight-color;
   color: #192730;
   transition: border-color 0.25s;
 }
 
 // LIENS - COULEURS ICONES 
 .link-color_white {
-  color: vars.$tertiary-color;
+  color: vars.$secondary-color;
 }
 .link-color_white:hover {
-  color: vars.$primary-color;
+  color: vars.$highlight-color;
 }
 
 .link-color_primary{
-  color: vars.$primary-color;
+  color: vars.$highlight-color;
 }
 .link-color_primary:hover {
-  color: vars.$tertiary-color;
+  color: vars.$secondary-color;
 }
 
 //TYPOGRAPHY
 em {
-  color: vars.$primary-color;
+  color: vars.$highlight-color;
 }
 
 .typography--normal {
