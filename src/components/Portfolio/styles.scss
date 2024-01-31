@@ -4,7 +4,15 @@
 #sectionPortfolio {
 	background-color: vars.$secondary-color;
 	padding-top: vars.$headerHeight;
-	/* Compense la hauteur de l'en-tête pour centrer le container*/
+	color: vars.$primary-color;
+}
 
+.portfolio__container{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
 }
 
