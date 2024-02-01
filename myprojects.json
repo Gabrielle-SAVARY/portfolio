@@ -1,0 +1,26 @@
+[
+	{
+		"name": "QuizOtron",
+		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-vue accueil_desktop.png",
+		"RepoGithub": [
+			{
+				"repoName": "Repo Frontend",
+				"repoLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front"
+			},
+			{
+				"repoName": "Repo Backend",
+				"repoLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Back"
+			}
+		]
+	},
+	{
+		"name": "Poxedex JS",
+		"imageLink": "./src/assets/images/myProjectsImg/Pokedex-JS_desktop.png",
+		"RepoGithub": [
+			{
+				"repoName": "Repo",
+				"repoLink": "https://github.com/Gabrielle-SAVARY/Pokedex-JS"
+			}
+		]
+	}	
+]
