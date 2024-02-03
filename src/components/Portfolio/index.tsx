@@ -1,13 +1,16 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MyProject from '../MyProject';
-import { IMyProjects } from '../../@types/dataMyProjects';
-import TestIcon from '../TestIcon';
+import MyProjectModal from '../MyProjectModal';
+import { IMyProject } from '../../@types/dataMyProject';
 import './styles.scss';
 
 // TODO améliorer gestion erreur fetch
 
 function Portfolio() {
-  const [projectsList, setProjectsList] = useState<IMyProjects[]>([]);
+  const [projectsList, setProjectsList] = useState<IMyProject[]>([]);
+  const [isProjectModalOpen, setIsProjectModalOpen] = useState<boolean>(false);
+
+  console.log('STATE', isProjectModalOpen);
 
   const getAllProjects = async () => {
     try {
@@ -34,11 +37,14 @@ function Portfolio() {
             name={project.name}
             legend={project.legend}
             projectImage={project.imageLink}
+            setIsProjectModalOpen={setIsProjectModalOpen}
           />
         ))}
 
-        <MyProject name="Projet 3" legend="" projectImage="" />
+        <MyProject name="Projet 3" legend="" projectImage="" setIsProjectModalOpen={setIsProjectModalOpen} />
 
+        {isProjectModalOpen && (
+        <MyProjectModal />)}
       </div>
 
     </section>

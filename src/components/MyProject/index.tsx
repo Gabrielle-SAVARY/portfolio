@@ -4,9 +4,16 @@ interface MyProjectProps {
   name: string;
   legend: string;
   projectImage: string;
+  setIsProjectModalOpen: (value: boolean) => void;
 }
 
-function MyProject({ name, legend, projectImage }: MyProjectProps) {
+function MyProject({
+  name, legend, projectImage, setIsProjectModalOpen,
+}: MyProjectProps) {
+  const handleMOpenModal = (event: React.MouseEvent<HTMLButtonElement>) => {
+    setIsProjectModalOpen(true);
+  };
+
   return (
     <article className="card">
       <div className="card__header">
@@ -17,7 +24,7 @@ function MyProject({ name, legend, projectImage }: MyProjectProps) {
         <p className="card__body__project-legend">{legend}</p>
       </div>
       <div className="card__footer">
-        <button type="button" className="card__footer__btn-open-modal">En savoir plus</button>
+        <button type="button" className="card__footer__btn-open-modal" onClick={(event) => handleMOpenModal(event)}>En savoir plus</button>
       </div>
     </article>
   );
