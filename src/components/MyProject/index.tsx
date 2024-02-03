@@ -16,6 +16,9 @@ function MyProject({ name, legend, projectImage }: MyProjectProps) {
         <h3 className="card__body__project-name">{name}</h3>
         <p className="card__body__project-legend">{legend}</p>
       </div>
+      <div className="card__footer">
+        <button type="button" className="card__footer__btn-open-modal">En savoir plus</button>
+      </div>
     </article>
   );
 }
