@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import MyProjects from '../MyProjects';
+import MyProject from '../MyProject';
 import { IMyProjects } from '../../@types/dataMyProjects';
+import TestIcon from '../TestIcon';
 import './styles.scss';
 
 // TODO améliorer gestion erreur fetch
@@ -27,9 +28,17 @@ function Portfolio() {
     <section id="sectionPortfolio" className="sectionTwo">
       <h2>MES PROJETS</h2>
       <div className="portfolio__container">
-        <MyProjects title="Projet 1" backgroundHero="" />
-        <MyProjects title="Projet 2" backgroundHero="" />
-        <MyProjects title="Projet 3" backgroundHero="" />
+        {projectsList.map((project) => (
+          <MyProject
+            key={project.id}
+            name={project.name}
+            legend={project.legend}
+            projectImage={project.imageLink}
+          />
+        ))}
+
+        <MyProject name="Projet 3" legend="" projectImage="" />
+
       </div>
 
     </section>
