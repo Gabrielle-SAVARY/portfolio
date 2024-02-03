@@ -1,4 +1,4 @@
-export interface IMyProjects {
+export interface IMyProject {
   id: number
   name: string
   legend: string
