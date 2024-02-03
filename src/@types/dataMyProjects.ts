@@ -1,5 +1,7 @@
 export interface IMyProjects {
+  id: number
   name: string
+  legend: string
   imageLink: string
   RepoGithub: IRepoGithub[]
 }

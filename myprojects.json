@@ -1,7 +1,10 @@
 [
 	{
+		"id":1,
 		"name": "QuizOtron",
-		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-vue accueil_desktop.png",
+		"legend":"Le site de quiz où l'on se pose toujours plus de questions",
+		"description":"Le site de quiz où l'on se pose toujours plus de questions",
+		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-homepage_desktop.png",
 		"RepoGithub": [
 			{
 				"repoName": "Repo Frontend",
@@ -14,7 +17,10 @@
 		]
 	},
 	{
-		"name": "Poxedex JS",
+		"id":2,
+		"name": "Pokédex JS",
+		"legend":"Filtrer la première génération de pokémons pour retrouver un peu de nostalgie",
+		"description":"Un Pokedex en JavaScript Vanilla, pour retrouver la première génération de pokémons",
 		"imageLink": "./src/assets/images/myProjectsImg/Pokedex-JS_desktop.png",
 		"RepoGithub": [
 			{
