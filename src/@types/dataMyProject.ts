@@ -2,8 +2,9 @@ export interface IMyProject {
   id: number
   name: string
   legend: string
+  description: string
   imageLink: string
-  RepoGithub: IRepoGithub[]
+  repoGithub: IRepoGithub[]
 }
 
 export interface IRepoGithub {

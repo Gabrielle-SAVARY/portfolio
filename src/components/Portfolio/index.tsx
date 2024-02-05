@@ -7,10 +7,14 @@ import './styles.scss';
 // TODO améliorer gestion erreur fetch
 
 function Portfolio() {
+  // Liste des projets
   const [projectsList, setProjectsList] = useState<IMyProject[]>([]);
+  // Vérifie si la modale du projet est ouverte
   const [isProjectModalOpen, setIsProjectModalOpen] = useState<boolean>(false);
+  // Id du projet à afficher dans la modale
   const [projectIdModalOpen, setProjectIdModalOpen] = useState<number>(0);
-  console.log('STATE', isProjectModalOpen);
+
+  const [projectDetailModal, setProjectDetailModal] = useState<IMyProject | null>(null);
 
   const getAllProjects = async () => {
     try {
@@ -25,7 +29,7 @@ function Portfolio() {
 
   const handleFilterProjectModal = (allProjects: IMyProject[], projectId: number) => {
     const projectFiltered = allProjects.filter((project) => project.id === projectId);
-    console.log('projectFiltered', projectFiltered);
+    setProjectDetailModal(projectFiltered[0]);
   };
 
   useEffect(() => {
@@ -62,7 +66,11 @@ function Portfolio() {
         />
 
         {isProjectModalOpen && (
-        <MyProjectModal setIsProjectModalOpen={setIsProjectModalOpen} />)}
+        <MyProjectModal
+          setIsProjectModalOpen={setIsProjectModalOpen}
+          projectDetails={projectDetailModal}
+        />
+        )}
       </div>
 
     </section>

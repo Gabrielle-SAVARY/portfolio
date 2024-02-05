@@ -5,7 +5,7 @@
 		"legend":"Le site de quiz où l'on se pose toujours plus de questions",
 		"description":"Le site de quiz où l'on se pose toujours plus de questions",
 		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-homepage_desktop.png",
-		"RepoGithub": [
+		"repoGithub": [
 			{
 				"repoName": "Repo Frontend",
 				"repoLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front"
@@ -22,7 +22,7 @@
 		"legend":"Filtrer la première génération de pokémons pour retrouver un peu de nostalgie",
 		"description":"Un Pokedex en JavaScript Vanilla, pour retrouver la première génération de pokémons",
 		"imageLink": "./src/assets/images/myProjectsImg/Pokedex-JS_desktop.png",
-		"RepoGithub": [
+		"repoGithub": [
 			{
 				"repoName": "Repo",
 				"repoLink": "https://github.com/Gabrielle-SAVARY/Pokedex-JS"
