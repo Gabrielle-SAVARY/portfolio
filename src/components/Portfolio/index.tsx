@@ -62,7 +62,7 @@ function Portfolio() {
         />
 
         {isProjectModalOpen && (
-        <MyProjectModal />)}
+        <MyProjectModal setIsProjectModalOpen={setIsProjectModalOpen} />)}
       </div>
 
     </section>
