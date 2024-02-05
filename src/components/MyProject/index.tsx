@@ -1,17 +1,20 @@
 import './styles.scss';
 
 interface MyProjectProps {
+  id:number
   name: string;
   legend: string;
   projectImage: string;
   setIsProjectModalOpen: (value: boolean) => void;
+  setProjectIdModalOpen: (value: number) => void;
 }
 
 function MyProject({
-  name, legend, projectImage, setIsProjectModalOpen,
+  id, name, legend, projectImage, setIsProjectModalOpen, setProjectIdModalOpen,
 }: MyProjectProps) {
-  const handleMOpenModal = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const handleMOpenModal = (event: React.MouseEvent<HTMLButtonElement>, projectId: number) => {
     setIsProjectModalOpen(true);
+    setProjectIdModalOpen(projectId);
   };
 
   return (
@@ -24,7 +27,7 @@ function MyProject({
         <p className="card__body__project-legend">{legend}</p>
       </div>
       <div className="card__footer">
-        <button type="button" className="card__footer__btn-open-modal" onClick={(event) => handleMOpenModal(event)}>En savoir plus</button>
+        <button type="button" className="card__footer__btn-open-modal" onClick={(event) => handleMOpenModal(event, id)}>En savoir plus</button>
       </div>
     </article>
   );

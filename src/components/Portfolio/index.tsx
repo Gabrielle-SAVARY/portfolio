@@ -9,7 +9,7 @@ import './styles.scss';
 function Portfolio() {
   const [projectsList, setProjectsList] = useState<IMyProject[]>([]);
   const [isProjectModalOpen, setIsProjectModalOpen] = useState<boolean>(false);
-
+  const [projectIdModalOpen, setProjectIdModalOpen] = useState<number>(0);
   console.log('STATE', isProjectModalOpen);
 
   const getAllProjects = async () => {
@@ -23,9 +23,18 @@ function Portfolio() {
     }
   };
 
+  const handleFilterProjectModal = (allProjects: IMyProject[], projectId: number) => {
+    const projectFiltered = allProjects.filter((project) => project.id === projectId);
+    console.log('projectFiltered', projectFiltered);
+  };
+
   useEffect(() => {
     getAllProjects();
   }, []);
+
+  useEffect(() => {
+    if (projectIdModalOpen !== 0) handleFilterProjectModal(projectsList, projectIdModalOpen);
+  }, [projectIdModalOpen, projectsList]);
 
   return (
     <section id="sectionPortfolio" className="sectionTwo">
@@ -34,14 +43,23 @@ function Portfolio() {
         {projectsList.map((project) => (
           <MyProject
             key={project.id}
+            id={project.id}
             name={project.name}
             legend={project.legend}
             projectImage={project.imageLink}
             setIsProjectModalOpen={setIsProjectModalOpen}
+            setProjectIdModalOpen={setProjectIdModalOpen}
           />
         ))}
 
-        <MyProject name="Projet 3" legend="" projectImage="" setIsProjectModalOpen={setIsProjectModalOpen} />
+        <MyProject
+          id={3}
+          name="Projet 3"
+          legend=""
+          projectImage=""
+          setIsProjectModalOpen={setIsProjectModalOpen}
+          setProjectIdModalOpen={setProjectIdModalOpen}
+        />
 
         {isProjectModalOpen && (
         <MyProjectModal />)}
