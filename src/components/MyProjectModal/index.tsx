@@ -32,7 +32,7 @@ function MyProjectModal({ setIsProjectModalOpen, projectDetails }: MyProjectModa
 
             <p>{projectDetails.legend}</p>
             <p>{projectDetails.description}</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium corporis quam laboriosam repellendus unde laudantium. Quia minus optio saepe eaque mollitia officia perferendis, quisquam dolor officiis quis laborum asperiores aut ullam! Consequatur est vel dicta harum ad, quod explicabo quibusdam facilis repellat consectetur saepe quaerat eum laboriosam soluta temporibus accusantium, nobis odio neque reiciendis molestias nulla! Nulla assumenda esse similique tenetur possimus odit, tempore exercitationem repellat fuga consectetur, iure enim, unde harum sit veritatis iusto? Molestias obcaecati necessitatibus dolore optio esse nesciunt voluptatem tempore libero quas nobis ex atque voluptas, voluptatibus dolorem incidunt eius. Eum nisi non aspernatur ratione et?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium   </p>
           </div>
           {projectDetails.repoGithub.map((repo) => (
             <div key={repo.repoName} className="modal__content__footer">
