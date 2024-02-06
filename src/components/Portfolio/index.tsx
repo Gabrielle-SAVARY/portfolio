@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import MyProject from '../MyProject';
-import MyProjectModal from '../MyProjectModal';
 import { IMyProject } from '../../@types/dataMyProject';
 import './styles.scss';
 
@@ -9,12 +8,6 @@ import './styles.scss';
 function Portfolio() {
   // Liste des projets
   const [projectsList, setProjectsList] = useState<IMyProject[]>([]);
-  // Vérifie si la modale du projet est ouverte
-  const [isProjectModalOpen, setIsProjectModalOpen] = useState<boolean>(false);
-  // Id du projet à afficher dans la modale
-  const [projectIdModalOpen, setProjectIdModalOpen] = useState<number>(0);
-
-  const [projectDetailModal, setProjectDetailModal] = useState<IMyProject | null>(null);
 
   const getAllProjects = async () => {
     try {
@@ -27,18 +20,9 @@ function Portfolio() {
     }
   };
 
-  const handleFilterProjectModal = (allProjects: IMyProject[], projectId: number) => {
-    const projectFiltered = allProjects.filter((project) => project.id === projectId);
-    setProjectDetailModal(projectFiltered[0]);
-  };
-
   useEffect(() => {
     getAllProjects();
   }, []);
-
-  useEffect(() => {
-    if (projectIdModalOpen !== 0) handleFilterProjectModal(projectsList, projectIdModalOpen);
-  }, [projectIdModalOpen, projectsList]);
 
   return (
     <section id="sectionPortfolio" className="sectionTwo">
@@ -51,8 +35,6 @@ function Portfolio() {
             name={project.name}
             legend={project.legend}
             projectImage={project.imageLink}
-            setIsProjectModalOpen={setIsProjectModalOpen}
-            setProjectIdModalOpen={setProjectIdModalOpen}
           />
         ))}
 
@@ -61,18 +43,8 @@ function Portfolio() {
           name="Projet 3"
           legend=""
           projectImage=""
-          setIsProjectModalOpen={setIsProjectModalOpen}
-          setProjectIdModalOpen={setProjectIdModalOpen}
         />
-
-        {isProjectModalOpen && (
-        <MyProjectModal
-          setIsProjectModalOpen={setIsProjectModalOpen}
-          projectDetails={projectDetailModal}
-        />
-        )}
       </div>
-
     </section>
   );
 }
