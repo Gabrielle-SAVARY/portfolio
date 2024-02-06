@@ -1,15 +1,15 @@
 import './styles.scss';
 
-interface MyProjectProps {
+interface CardProjectProps {
   id:number
   name: string;
   legend: string;
   projectImage: string;
 }
 
-function MyProject({
+function CardProject({
   id, name, legend, projectImage,
-}: MyProjectProps) {
+}: CardProjectProps) {
   return (
     <article className="card" id={`${id}-${name}`}>
       <div className="card__header">
@@ -26,4 +26,4 @@ function MyProject({
   );
 }
 
-export default MyProject;
+export default CardProject;

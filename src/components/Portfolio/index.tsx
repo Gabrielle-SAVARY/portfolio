@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MyProject from '../MyProject';
+import CardProject from '../CardProject';
 import { IMyProject } from '../../@types/dataMyProject';
 import './styles.scss';
 
@@ -29,7 +29,7 @@ function Portfolio() {
       <h2>MES PROJETS</h2>
       <div className="portfolio__container">
         {projectsList.map((project) => (
-          <MyProject
+          <CardProject
             key={project.id}
             id={project.id}
             name={project.name}
@@ -38,7 +38,7 @@ function Portfolio() {
           />
         ))}
 
-        <MyProject
+        <CardProject
           id={3}
           name="Projet 3"
           legend=""
