@@ -31,18 +31,22 @@ function Portfolio() {
         {projectsList.map((project) => (
           <CardProject
             key={project.id}
-            id={project.id}
-            name={project.name}
-            legend={project.legend}
-            projectImage={project.imageLink}
+            myProject={project}
           />
         ))}
 
         <CardProject
-          id={3}
-          name="Projet 3"
-          legend=""
-          projectImage=""
+          myProject={
+          {
+            id: 3,
+            name: 'Projet 3',
+            description: 'Description du projet 3',
+            imageLink: '',
+            githubLink: '',
+            demoLink: '',
+          }
+        }
+
         />
       </div>
     </section>

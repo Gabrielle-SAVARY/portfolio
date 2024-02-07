@@ -2,31 +2,18 @@
 	{
 		"id":1,
 		"name": "QuizOtron",
-		"legend":"Le site de quiz où l'on se pose toujours plus de questions",
 		"description":"Le site de quiz où l'on se pose toujours plus de questions",
 		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-homepage_desktop.png",
-		"repoGithub": [
-			{
-				"repoName": "Repo Frontend",
-				"repoLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front"
-			},
-			{
-				"repoName": "Repo Backend",
-				"repoLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Back"
-			}
-		]
+		"githubLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front",
+		"demoLink": ""
 	},
 	{
 		"id":2,
 		"name": "Pokédex JS",
-		"legend":"Filtrer la première génération de pokémons pour retrouver un peu de nostalgie",
-		"description":"Un Pokedex en JavaScript Vanilla, pour retrouver la première génération de pokémons",
+		"description":"Filtrer la première génération de pokémons pour retrouver un peu de nostalgie",
 		"imageLink": "./src/assets/images/myProjectsImg/Pokedex-JS_desktop.png",
-		"repoGithub": [
-			{
-				"repoName": "Repo",
-				"repoLink": "https://github.com/Gabrielle-SAVARY/Pokedex-JS"
-			}
-		]
+		"githubLink": "https://github.com/Gabrielle-SAVARY/Pokedex-JS",
+		"demoLink": ""
+
 	}	
 ]

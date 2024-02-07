@@ -1,26 +1,46 @@
+import { AiFillGithub } from 'react-icons/ai';
+import { FaPlay } from 'react-icons/fa';
+import { IMyProject } from '../../@types/dataMyProject';
+
 import './styles.scss';
 
 interface CardProjectProps {
-  id:number
-  name: string;
-  legend: string;
-  projectImage: string;
+  myProject: IMyProject;
 }
 
 function CardProject({
-  id, name, legend, projectImage,
+  myProject: {
+    id, name, description, imageLink, githubLink, demoLink,
+  },
 }: CardProjectProps) {
   return (
     <article className="card" id={`${id}-${name}`}>
       <div className="card__header">
-        <img className="card__header__image" src={projectImage} alt={name} />
+        <img className="card__header__image" src={imageLink} alt={name} />
       </div>
       <div className="card__body">
         <h3 className="card__body__project-name">{name}</h3>
-        <p className="card__body__project-legend">{legend}</p>
+        <p className="card__body__project-legend">{description}</p>
       </div>
       <div className="card__footer">
-        <button type="button" className="card__footer__btn">btn</button>
+        <a
+          href={githubLink}
+          className="card__footer__link card__footer__link__code"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <AiFillGithub style={{ fontSize: '24px', color: 'inherit' }} />
+          code
+        </a>
+        <a
+          href={demoLink}
+          className="card__footer__link card__footer__link__demo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          demo
+          <FaPlay style={{ fontSize: '18px', color: 'inherit' }} />
+        </a>
       </div>
     </article>
   );
