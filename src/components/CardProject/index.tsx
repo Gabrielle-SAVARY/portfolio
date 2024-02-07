@@ -10,7 +10,7 @@ interface CardProjectProps {
 
 function CardProject({
   myProject: {
-    id, name, description, imageLink, githubLink, demoLink,
+    id, name, description, technologies, imageLink, githubLink, demoLink,
   },
 }: CardProjectProps) {
   return (
@@ -20,7 +20,18 @@ function CardProject({
       </div>
       <div className="card__body">
         <h3 className="card__body__project-name">{name}</h3>
-        <p className="card__body__project-legend">{description}</p>
+        <div className="card__body__project-technologies">
+          {technologies.map((technology) => (
+            <span
+              key={technology}
+              className="card__body__project-technologies__tag"
+            >
+              {technology}
+            </span>
+          ))}
+
+        </div>
+        <p className="card__body__project-description">{description}</p>
       </div>
       <div className="card__footer">
         <a
@@ -29,8 +40,8 @@ function CardProject({
           target="_blank"
           rel="noreferrer"
         >
-          <AiFillGithub style={{ fontSize: '24px', color: 'inherit' }} />
           code
+          <AiFillGithub style={{ fontSize: '24px', color: 'inherit' }} />
         </a>
         <a
           href={demoLink}

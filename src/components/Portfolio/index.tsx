@@ -41,6 +41,7 @@ function Portfolio() {
             id: 3,
             name: 'Projet 3',
             description: 'Description du projet 3',
+            technologies: [''],
             imageLink: '',
             githubLink: '',
             demoLink: '',

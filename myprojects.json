@@ -2,7 +2,8 @@
 	{
 		"id":1,
 		"name": "QuizOtron",
-		"description":"Le site de quiz où l'on se pose toujours plus de questions",
+		"description":"Le site de quiz où l'on devient créateur de ses propres quiz !",
+		"technologies":["React", "Typescipt","Saas", "Node.js","PostgresSQL","Sequelize"],
 		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-homepage_desktop.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front",
 		"demoLink": ""
@@ -11,6 +12,7 @@
 		"id":2,
 		"name": "Pokédex JS",
 		"description":"Filtrer la première génération de pokémons pour retrouver un peu de nostalgie",
+		"technologies":["Javascript", "HTML/CSS"],
 		"imageLink": "./src/assets/images/myProjectsImg/Pokedex-JS_desktop.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/Pokedex-JS",
 		"demoLink": ""
