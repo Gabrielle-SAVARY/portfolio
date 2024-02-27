@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
-import portfolioLogo from '../../assets/images/portfolio-logo.png';
+import portfolioLogo from '../../assets/images/Logo-portfolio_white.png';
 import './styles.scss';
 
 function Header() {
