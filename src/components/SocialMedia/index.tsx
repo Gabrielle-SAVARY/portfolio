@@ -9,7 +9,7 @@ interface SocialMediaProps {
 
 function SocialMedia({ mediaName, mediaLink, mediaIconColor }: SocialMediaProps) {
   const socialMediaName = `social-media_${mediaName}`;
-  const iconStyle = { fontSize: '24px', color: 'inherit' };
+  const iconStyle = { fontSize: '32px', color: 'inherit' };
 
   // Icone en fonction du nom du media
   const socialMediaIcon = (media: string) => {
