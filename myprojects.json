@@ -13,7 +13,7 @@
 		"name": "Pokédex rétro JS",
 		"description":"Parcourer avec nostalgie la première génération de pokémons. À défaut de les attraper, filtrer les tous ! ",
 		"technologies":["Javascript", "HTML/CSS"],
-		"imageLink": "./src/assets/images/myProjectsImg/pokedex-home2_desktop.png",
+		"imageLink": "./src/assets/images/myProjectsImg/pokedex-home_desktop.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/Pokedex-retro-js",
 		"demoLink": "https://gabrielle-savary.github.io/Pokedex-retro-js/"
 
