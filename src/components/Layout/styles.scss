@@ -15,6 +15,6 @@
 	margin-top: vars.$headerHeight;
 
 	@include mixin.breakpoint(desktop) {
-		margin-top: calc(vars.$headerHeight *2);
+		margin-top: calc(vars.$headerHeight *1.25);
 	}
 }
