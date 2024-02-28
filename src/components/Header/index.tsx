@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { AiFillLinkedin } from 'react-icons/ai';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
 import portfolioLogo from '../../assets/images/Logo-portfolio_white.png';

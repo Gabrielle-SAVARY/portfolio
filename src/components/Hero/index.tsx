@@ -18,7 +18,7 @@ function Hero() {
           </p>
           <h1 className="presentation__heading__title">
             Développeuse web
-            {' '}
+            <br />
             <em>React/Fullstack</em>
           </h1>
         </div>
