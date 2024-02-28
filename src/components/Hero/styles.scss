@@ -58,12 +58,12 @@
 	
 		&__title {
 			color: vars.$primary-font-color;
-			font-size: 4rem;
+			font-size: 3rem;
 			font-weight: 800;
-			line-height: 125%; /* 80px */
+			line-height: 125%; 
 
 			@include mixin.breakpoint(tablet) {
-				font-size: 5rem;
+				font-size: 4rem;
 			}
 
 			@include mixin.breakpoint(desktop) {
@@ -83,28 +83,28 @@
 	}
 }
 
-.hero-img {
-	&__container{
-		display : none;	
+// .hero-img {
+// 	&__container{
+// 		display : none;	
 
-		@include mixin.breakpoint(desktop) {
-			overflow: hidden;
-			width: 50%;
-			display: flex;
-			justify-content: center;
-			align-items: flex-end;
-			flex-direction: column;
-			margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
-		}
-	}
+// 		@include mixin.breakpoint(desktop) {
+// 			overflow: hidden;
+// 			width: 50%;
+// 			display: flex;
+// 			justify-content: center;
+// 			align-items: flex-end;
+// 			flex-direction: column;
+// 			margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
+// 		}
+// 	}
 
-	&__image{
-		max-height: 648px;
-		max-width: 648px;
-		min-height: 148px;
-		min-width: 148px;
-		object-fit: contain;
-		overflow: hidden;	
-	}
-}
+// 	&__image{
+// 		max-height: 648px;
+// 		max-width: 648px;
+// 		min-height: 148px;
+// 		min-width: 148px;
+// 		object-fit: contain;
+// 		overflow: hidden;	
+// 	}
+// }
 

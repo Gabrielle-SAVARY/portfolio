@@ -48,9 +48,9 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-img__container">
+      {/* <div className="hero-img__container">
         <img className="hero-img__image" src={HeroImg6} alt="anime girl portrait with headphone" />
-      </div>
+      </div> */}
 
     </section>
   );
