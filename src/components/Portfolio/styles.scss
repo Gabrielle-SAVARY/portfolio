@@ -2,7 +2,8 @@
 @use '../../styles/vars';
 
 #sectionPortfolio {
-	background-color: vars.$secondary-color;
+	// background-color: vars.$secondary-color;
+	background-color: vars.$color3;
 	padding-top: vars.$headerHeight;
 	color: vars.$primary-color;
 }

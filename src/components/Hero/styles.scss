@@ -2,12 +2,20 @@
 @use '../../styles/vars';
 
 #sectionHero {
-	background-color: vars.$primary-color;
+	// background-color: vars.$primary-color;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 
 	min-height: calc(100vh - 292px);
+
+
+	background-image: url('../../assets/images/hero-background.png');
+	background-repeat: repeat;
+	background-size: contain;
+	// background-color: #F9F6ED;
+
+
 
 
 
@@ -29,35 +37,9 @@
 
 	@include mixin.breakpoint(desktop) {
 		padding: 3rem;
+
+		flex-direction: row;
 	}
-}
-
-.test-svg {
-	display: none;
-	opacity: 0.9;
-	position: absolute;
-	top: 0;
-	right: 0;
-	// z-index: 1;
-
-	height: 30%;
-	width: 100vw;
-	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink"><g clip-path="url(%23clip0_238_1284)"><path fill-rule="evenodd" clip-rule="evenodd" d="M50 0H0V100C0 155.228 44.7715 200 100 200C155.228 200 200 155.228 200 100V0H150C122.386 0 100 22.3858 100 50C100 22.3858 77.6142 0 50 0Z" fill="url(%23paint0_linear_238_1284)" /></g><defs><linearGradient id="paint0_linear_238_1284" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="%23FF846D" /><stop offset="1" stop-color="%23FFF4EE" /></linearGradient><clipPath id="clip0_238_1284"><rect width="200" height="200" fill="white" /></clipPath></defs></svg>');
-
-
-
-	// 	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400px" height="400px" viewBox="0 0 200 200" fill="none"><g clip-path="url(%23clip0_105_284)"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H50V50H0V0ZM100 50H50V100H0V150H50V200H100V150H150V200H200V150H150V100H200V50H150V0H100V50ZM100 100H150V50H100V100ZM100 100V150H50V100H100Z" fill="url(%23paint0_linear_105_284)"/></g><defs><linearGradient id="paint0_linear_105_284" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="%23FFF4EE"/><stop offset="1" stop-color="%23FF846D"/></linearGradient><clipPath id="clip0_105_284"><rect width="200" height="200" fill="white"/></clipPath></defs></svg>');
-	// 	background-repeat: repeat;
-
-	@include mixin.breakpoint(desktop) {
-		top: 0;
-		right: 0;
-		// z-index: 1;
-	
-		height: 80vh;
-		width: 30%;
-	}
-
 }
 
 .presentation {
@@ -161,6 +143,52 @@
 // }
 
 
+.hero-img {
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		@include mixin.breakpoint(desktop) {
+			overflow: hidden;
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			flex-direction: column;
+			margin-top: - vars.$headerHeight;
+			/* Compense la hauteur de l'en-tête pour centrer le container*/
+		}
+	}
+
+	&__image {
+		object-fit: contain;
+		overflow: hidden;
+		width: 100%;
+		min-width: 148px;
+		max-width: 300px;
+		min-height: 148px;
+		overflow: hidden;
+
+		@include mixin.breakpoint(tablet) {
+			min-width: 380px;
+			max-width: 480px;
+		}
+
+		@include mixin.breakpoint(desktop) {
+			min-width: 481px;
+			max-width: 700px;
+		}
+
+		@include mixin.breakpoint(desktopXL) {
+			width: 901px;
+		}
+	}
+}
+
+
+
 .custom-shape-divider-bottom-1709141769 {
 	// position: absolute;
 	// bottom: 0;
@@ -178,5 +206,5 @@
 }
 
 .custom-shape-divider-bottom-1709141769 .shape-fill {
-	fill: vars.$secondary-color;
+	fill: vars.$color3;
 }

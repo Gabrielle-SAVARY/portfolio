@@ -8,8 +8,7 @@
 	justify-content: center;
 	align-items: center;
 	height: 2.5rem;
-	color: vars.$highlight-color;
-
+	color: vars.$primary-color;
 }
 
 // BTN ICONE MOBILE - MENU MOBILE OUVERT
@@ -22,7 +21,7 @@
 	position: fixed;
 	top:28px;  //= padding header (6rem headerHeight/2 --> =3rem) - (2.5rem BtnHeight/2 --> =1.25rem)--> 1.75rem = 28px
 	right: 32px;
-	color: vars.$primary-color;	
+	color: vars.$secondary-color;	
 
 }
 

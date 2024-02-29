@@ -16,8 +16,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-flow: column;
-  background-color: vars.$primary-color;
-
+ 
   // FONT
   font-family: vars.$primary-font;
   color: vars.$primary-font-color;
@@ -30,13 +29,45 @@ body {
   @include mixin.breakpoint(desktop) {
     font-size: 1.45rem;
   }
+
+    // FONT POMPIERE v2
+    // font-family: vars.$primary-font;
+    // color: vars.$primary-font-color;
+    // font-size: 24px;
+    // font-weight: 400;
+    // line-height: normal;
+    // @include mixin.breakpoint(tablet) {
+    //   font-size: 28px;
+    // }
+    // @include mixin.breakpoint(desktop) {
+    //   font-size: 32px
+    // }
 }
 
 //TITLES
 h1 {
   font-size: 3rem;
   font-family: vars.$seccondary-font;
-  color: vars.$primary-font-color;
+
+  // TITLE GRADIENT
+    /* Fallback: Set a background color. */
+    background-color: #511a3c;
+  
+    /* Create the gradient. */
+    background: linear-gradient(to right, #511a3c, #802e4a, #af4852, #d76a52, #f79250);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+
 }
 
 section {
@@ -81,8 +112,9 @@ h2{
 
 // LIENS
 a {
-  font-weight: 600;
-  color: vars.$secondary-color;
+  font-family: vars.$third-font;
+  font-weight: 600; 
+  color: vars.$primary-color;
   text-decoration: inherit;
 }
 
@@ -105,7 +137,10 @@ a:hover {
 .btn--primary, .link--primary {
   border: 2px solid vars.$highlight-color;
   background: vars.$highlight-color;
-  color: #192730;
+  color: vars.$primary-color;
+
+//TODO: retro design
+  box-shadow: 0.25rem 0.25rem vars.$primary-color;
 }
 
 .btn--primary:hover, .link--primary:hover {
@@ -116,20 +151,20 @@ a:hover {
 
 .btn--secondary, .link--secondary {
   border: 2px solid vars.$highlight-color;
-  background: #192730;
+  background: vars.$primary-color;
   color: vars.$highlight-color;
 
 }
 
 .btn--secondary:hover, .link--secondary:hover {
   background: vars.$highlight-color;
-  color: #192730;
+  color: vars.$primary-color;
   transition: border-color 0.25s;
 }
 
 // LIENS - COULEURS ICONES 
 .link-color_white {
-  color: vars.$secondary-color;
+  color: vars.$primary-color;
 }
 .link-color_white:hover {
   color: vars.$highlight-color;
@@ -144,19 +179,18 @@ a:hover {
 
 //TYPOGRAPHY
 em {
+  -webkit-text-fill-color: vars.$highlight-color; 
   color: vars.$highlight-color;
 }
 
 .typography--normal {
-  color: vars.$primary-font-color;
-  // font-family: Poppins;
+  color: vars.$primary-color;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: normal;
 }
 
 .typography--btn, .typography--link {
-  // font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;

@@ -1,10 +1,6 @@
 import { AiFillLinkedin } from 'react-icons/ai';
-import HeroImg from '../../assets/images/bg-pc-vert.png';
-import HeroImg2 from '../../assets/images/coding-amico_storyset.png';
-import HeroImg3 from '../../assets/images/bg-pc-vert-removebg.png';
-import HeroImg4 from '../../assets/images/image17 - Copie.png';
-import HeroImg5 from '../../assets/images/image17.png';
 import HeroImg6 from '../../assets/images/background12-crop-miror.png';
+import HeroImg7 from '../../assets/images/Frente H1 - Copie.png';
 
 import './styles.scss';
 
@@ -30,9 +26,6 @@ function Hero() {
               <br />
               <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
             </p>
-            <p className="presentation__text__paragraph">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, autem veritatis fugi.
-            </p>
           </div>
           <div className="presentation__links">
             <a
@@ -48,13 +41,11 @@ function Hero() {
             <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary typography--btn">Mon portfolio</a></button>
           </div>
         </div>
-        <div className="test-svg" />
 
+        <div className="hero-img__container">
+          <img className="hero-img__image" src={HeroImg7} alt="anime girl portrait with headphone" />
+        </div>
       </div>
-
-      {/* <div className="hero-img__container">
-        <img className="hero-img__image" src={HeroImg6} alt="anime girl portrait with headphone" />
-      </div> */}
 
       <div className="custom-shape-divider-bottom-1709141769">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
