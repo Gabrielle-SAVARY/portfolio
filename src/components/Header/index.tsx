@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
-import portfolioLogo from '../../assets/images/Logo-portfolio_white.png';
+import portfolioLogo from '../../assets/images/Logo-portfolio_primary.png';
 import './styles.scss';
 
 function Header() {

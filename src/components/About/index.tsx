@@ -1,6 +1,6 @@
 import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import CV from '../../assets/CV PORTFOLIO développeur web .pdf';
-import portraitImage from '../../assets/images/image-portrait.png';
+import portraitImage from '../../assets/images/portraitGS.png';
 
 import './styles.scss';
 
