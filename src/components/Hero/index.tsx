@@ -1,6 +1,6 @@
 import { AiFillLinkedin } from 'react-icons/ai';
 import HeroImg6 from '../../assets/images/background12-crop-miror.png';
-import HeroImg7 from '../../assets/images/Frente H1 - Copie.png';
+import HeroImg7 from '../../assets/images/workspace-background.png';
 
 import './styles.scss';
 
