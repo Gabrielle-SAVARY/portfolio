@@ -5,7 +5,6 @@
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
-	// background-color: vars.$secondary-color;
 }
 
 .app__content {
@@ -13,7 +12,6 @@
 	justify-content: center;
 	flex-direction: column;
 	justify-content: space-between;
-	// margin-top: vars.$headerHeight;
 
 	@include mixin.breakpoint(desktop) {
 		margin-top: calc(vars.$headerHeight - 2px);

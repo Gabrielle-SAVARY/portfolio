@@ -40,12 +40,13 @@ section {
   padding: 2rem;
 
   @include mixin.breakpoint(desktop) {
-    padding: 3rem;
+    padding: 3rem;    
   }
+  
 }
 
 
-//TITLES
+// TYPOGRAPHY
 h1 {
   width: fit-content;
   color: vars.$primary-color;
@@ -93,6 +94,40 @@ h2 {
     font-size: 5rem;
   }
 }
+
+
+em {
+  -webkit-text-fill-color: vars.$highlight-color;
+  color: vars.$highlight-color;
+}
+
+.heading-font-accent {
+  -webkit-text-fill-color: vars.$highlight-color;
+  color: vars.$highlight-color;  
+
+  text-shadow:
+    -2px -2px 0 vars.$primary-color,
+    2px -2px 0 vars.$primary-color,
+    -2px 2px 0 vars.$primary-color,
+    2px 2px 0 vars.$primary-color;
+
+  //FULL ORANGE
+  // text-shadow:
+  // -2px -2px 0 vars.$highlight-color,
+  // 2px -2px 0 vars.$highlight-color,
+  // -2px 2px 0 vars.$highlight-color,
+  // 2px 2px 0 vars.$highlight-color;
+}
+
+.typography--btn,
+.typography--link {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
 
 // BOUTONS
 .btn {
@@ -178,7 +213,7 @@ a:hover {
 
 // LIENS - COULEURS ICONES 
 .link-color_white {
-  color: vars.$primary-color;
+  color: vars.$secondary-color;
 }
 
 .link-color_white:hover {
@@ -186,42 +221,10 @@ a:hover {
 }
 
 .link-color_primary {
-  color: vars.$highlight-color;
+  color: vars.$primary-color;
 }
 
 .link-color_primary:hover {
-  color: vars.$secondary-color;
-}
-
-//TYPOGRAPHY
-em {
-  -webkit-text-fill-color: vars.$highlight-color;
   color: vars.$highlight-color;
 }
 
-.heading-font-accent {
-  -webkit-text-fill-color: vars.$highlight-color;
-  color: vars.$highlight-color;  
-
-  text-shadow:
-    -2px -2px 0 vars.$primary-color,
-    2px -2px 0 vars.$primary-color,
-    -2px 2px 0 vars.$primary-color,
-    2px 2px 0 vars.$primary-color;
-
-  //FULL ORANGE
-  // text-shadow:
-  // -2px -2px 0 vars.$highlight-color,
-  // 2px -2px 0 vars.$highlight-color,
-  // -2px 2px 0 vars.$highlight-color,
-  // 2px 2px 0 vars.$highlight-color;
-}
-
-.typography--btn,
-.typography--link {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-transform: uppercase;
-}

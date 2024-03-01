@@ -2,28 +2,19 @@
 @use '../../styles/vars';
 
 #sectionHero {
-	// background-color: vars.$primary-color;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-
+	align-items: flex-start;	
 	min-height: calc(100vh - 292px);
-
-
+	padding: 0;
 	background-image: url('../../assets/images/hero-background.png');
 	background-repeat: repeat;
-	background-size: contain;
-	// background-color: #F9F6ED;
-
-
-
-
-
-	padding: 0;
-
+	background-size: contain;	
+	
 	@include mixin.breakpoint(desktop) {
-		// justify-content: space-between;
-		padding-right: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 
@@ -37,24 +28,19 @@
 
 	@include mixin.breakpoint(desktop) {
 		padding: 3rem;
-
 		flex-direction: row;
+		max-width: 80%;		
 	}
 }
 
 .presentation {
 	flex-grow: 1;
-
-
-
 	width: 100%;
 	padding: 0.5rem;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	// margin-top: - vars.$headerHeight; 
-	/* Compense la hauteur de l'en-tête pour centrer le container*/
 
 	@include mixin.breakpoint(tablet) {}
 
@@ -69,21 +55,23 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 2.5rem;
-		margin-top: 2.5rem;
+		margin: 2rem 0 3rem;
 
 		@include mixin.breakpoint(tablet) {
 			width: 100%;
 			flex-direction: row;
-			justify-content: flex-start;
+		}
 
+		@include mixin.breakpoint(desktop) {
+			justify-content: flex-start;
 		}
 	}
 
 	&__heading {
-		width: 100%;
+		// width: 100%;
 		max-width: 100%;
-
 		&__title {
+			text-align: center;
 			// TITLE GRADIENT
 			/* Fallback: Set a background color. */
 			background-color: vars.$primary-color;
@@ -101,6 +89,10 @@
 			-webkit-text-fill-color: transparent;
 			-moz-background-clip: text;
 			-moz-text-fill-color: transparent;
+
+			@include mixin.breakpoint(desktop) {
+				text-align: unset;
+			}
 		}
 	}
 
@@ -114,32 +106,6 @@
 		text-align: left;
 	}
 }
-
-// .hero-img {
-// 	&__container{
-// 		display : none;	
-
-// 		@include mixin.breakpoint(desktop) {
-// 			overflow: hidden;
-// 			width: 50%;
-// 			display: flex;
-// 			justify-content: center;
-// 			align-items: flex-end;
-// 			flex-direction: column;
-// 			margin-top: - vars.$headerHeight; /* Compense la hauteur de l'en-tête pour centrer le container*/
-// 		}
-// 	}
-
-// 	&__image{
-// 		max-height: 648px;
-// 		max-width: 648px;
-// 		min-height: 148px;
-// 		min-width: 148px;
-// 		object-fit: contain;
-// 		overflow: hidden;	
-// 	}
-// }
-
 
 .hero-img {
 	&__container {
@@ -163,24 +129,19 @@
 	&__image {
 		object-fit: contain;
 		overflow: hidden;
-		width: 100%;
-		min-width: 148px;
-		max-width: 300px;
+		width: 70%;
+		// min-width: 148px;
+		// max-width: 300px;
 		min-height: 148px;
 		overflow: hidden;
 
 		@include mixin.breakpoint(tablet) {
-			min-width: 380px;
-			max-width: 480px;
+			width: 65%;
 		}
-
 		@include mixin.breakpoint(desktop) {
-			min-width: 481px;
-			max-width: 700px;
-		}
+			max-width: 80%;
+			max-height: fit-content;
 
-		@include mixin.breakpoint(desktopXL) {
-			width: 901px;
 		}
 	}
 }
