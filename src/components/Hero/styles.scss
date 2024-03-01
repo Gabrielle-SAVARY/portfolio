@@ -44,13 +44,13 @@
 
 .presentation {
 	flex-grow: 1;
-	z-index: 1;
+
 
 
 	width: 100%;
 	padding: 0.5rem;
 	display: flex;
-	flex-direction: column;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 	// margin-top: - vars.$headerHeight; 
@@ -83,26 +83,24 @@
 		width: 100%;
 		max-width: 100%;
 
-		&__hello {
-			color: vars.$primary-font-color;
-			font-size: 1.5rem;
-			font-weight: 500;
-			line-height: normal;
-		}
-
 		&__title {
-			color: vars.$primary-font-color;
-			font-size: 3rem;
-			font-weight: 800;
-			line-height: 125%;
+			// TITLE GRADIENT
+			/* Fallback: Set a background color. */
+			background-color: vars.$primary-color;
 
-			@include mixin.breakpoint(tablet) {
-				font-size: 4rem;
-			}
+			/* Create the gradient. */
+			background: linear-gradient(to right, vars.$primary-color, #802e4a, #af4852, #d76a52, vars.$highlight-color);
 
-			@include mixin.breakpoint(desktop) {
-				font-size: 6rem;
-			}
+			/* Set the background size and repeat properties. */
+			background-size: 100%;
+			background-repeat: repeat;
+
+			/* Use the text as a mask for the background. */
+			/* This will show the gradient as a text color rather than element bg. */
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-moz-background-clip: text;
+			-moz-text-fill-color: transparent;
 		}
 	}
 
@@ -113,7 +111,7 @@
 		align-items: flex-start;
 		gap: 1rem;
 		margin: 2.5rem 0 1.25rem 0;
-		text-align: justify;
+		text-align: left;
 	}
 }
 
@@ -206,5 +204,5 @@
 }
 
 .custom-shape-divider-bottom-1709141769 .shape-fill {
-	fill: vars.$color3;
+	fill: vars.$highlight-light;
 }

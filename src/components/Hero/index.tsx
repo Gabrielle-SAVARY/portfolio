@@ -10,13 +10,10 @@ function Hero() {
       <div className="hero__container">
         <div className="presentation">
           <div className="presentation__heading">
-            <p className="presentation__heading__hello">
-              Bonjour, je suis
-            </p>
             <h1 className="presentation__heading__title">
               Développeuse web
               <br />
-              <em>React/Fullstack</em>
+              <em className="heading-font-accent">Javascript Fullstack</em>
             </h1>
           </div>
           <div className="presentation__texts">

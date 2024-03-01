@@ -29,7 +29,7 @@
     backdrop-filter: blur(2px);
     // background-color: vars.$secondary-color;
 
-    background-color: vars.$color3;
+    background-color: vars.$primary-light;
 }
 
 .header--open a {
@@ -64,14 +64,16 @@
 }
 
 .header__logo--open {
-    display: none;
+    // display: none;
 
-    // height:2.5rem;
-    // position: fixed;
-    // display: flex;
-    // align-items: center;
-    // top: 12px;
-    // left: 32px;
+    height: 88px;
+    padding-top: 16px;
+    padding-bottom: 4px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 4px; // padding-top: 16px - padding header: 12px
+    left: 32px;
 }
 
 // LISTE MENU
@@ -81,6 +83,7 @@
     flex-direction: column;
     align-items: center;
     list-style: none;
+    
     font-size: 1.3rem;
     color: vars.$secondary-color;
 
@@ -96,7 +99,7 @@
 .header__navbar__menu-links__separator {
     width: 6rem;
     height: 2px;
-    color: vars.$secondary-color;
+    background-color: vars.$secondary-color;
 }
 
 .header__navbar__menu-links__social-media {
@@ -145,7 +148,7 @@
     .header__navbar__menu-links__separator {
         width: 2px;
         height: 2rem;
-        color: vars.$secondary-color;
+        background-color: vars.$primary-color;
     }
 
 }
