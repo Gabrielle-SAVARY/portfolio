@@ -27,7 +27,7 @@ function Hero() {
           <div className="presentation__links">
             <a
               href="https://www.linkedin.com/in/gabrielle-savary/"
-              className="link link--primary typography--link"
+              className="link link--primary"
               target="_blank"
               rel="noreferrer"
             >
@@ -35,7 +35,7 @@ function Hero() {
               {' '}
               <AiFillLinkedin style={{ fontSize: '26px', color: 'inherit' }} />
             </a>
-            <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary typography--btn">Mon portfolio</a></button>
+            <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary">Mon portfolio</a></button>
           </div>
         </div>
 

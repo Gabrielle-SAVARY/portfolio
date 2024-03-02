@@ -21,8 +21,16 @@
 	position: fixed;
 	top:28px;  //= padding header (6rem headerHeight/2 --> =3rem) - (2.5rem BtnHeight/2 --> =1.25rem)--> 1.75rem = 28px
 	right: 32px;
-	color: vars.$secondary-color;	
+	border: 2px solid vars.$primary-color;
+	background-color: vars.$mauve;
+	color: vars.$secondary-color;
+}
 
+.header__navbar__btn-menu-mobile--open:hover{
+	background-color: vars.$mauve-light;
+}
+.header__navbar__btn-menu-mobile--open:focus, .header__navbar__btn-menu-mobile--open:active{
+	box-shadow: inset 2px 2px  vars.$primary-color;
 }
 
 @include mixin.breakpoint(desktop) {
