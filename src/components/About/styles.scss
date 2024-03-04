@@ -3,21 +3,42 @@
 
 
 #sectionAbout {
+	min-height: calc(100vh - 6rem);
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-start;
-
-	background-color: vars.$secondary-color;
+	background-color: vars.$primary-color;
 	padding-top: calc(vars.$headerHeight + 2rem);
 	/* Compense la hauteur de l'en-tête pour centrer le container*/
+	position: relative;
+	z-index: 1;
 
 	@include mixin.breakpoint(desktop) {
 		flex-flow: column;
 		justify-content: center;
 		align-items: center;
 	}
+}
 
+.section-about__scalopped-border-top {
+	position: absolute;
+	top: -40px;
+	left: 0;
+	height: 170px;
+	width: 100%;
+	background-color: vars.$primary-color;
+
+	// scalloped border
+	--mask:
+		linear-gradient(0deg, #0000 160px, #000 0) 0 80px,
+		radial-gradient(80px, #000 98%, #0000) 50%/128px 160px repeat space;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+.about-title {
+	color: vars.$secondary-color;
 }
 
 .about {
@@ -26,31 +47,51 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	gap:3rem;
-	padding: 2rem 0 2rem 0;
+	gap: 3rem;
+	padding: 4rem;
+	margin-bottom: 4rem;
+	border-radius: 25px;
+	background-color: vars.$white-fade-transparent;
 
 	@include mixin.breakpoint(desktop) {
 		flex-direction: row;
-		gap: 6rem;
-		max-width: 80%;
+		align-items: flex-start;
+		gap: 4rem;
+		max-width: 75%;
 	}
-
 
 	&__image {
 		display: flex;
 		justify-content: center;
 
 		&-portrait {
-			max-height: 228px;
-			max-width: 228px;
+			max-height: 188px;
+			max-width: 188px;
 			min-height: 148px;
 			min-width: 148px;
 			object-fit: cover;
-			clip-path: circle(50%);
+			border-radius: 25px;
+
+			// SHADOW
+			box-shadow:
+				0.5px 1px 0 0 vars.$mauve,
+				1.5px 2px 0 0 vars.$mauve,
+				2.5px 3px 0 0 vars.$mauve,
+				3.5px 4px 0 0 vars.$mauve,
+				4.5px 5px 0 0 vars.$mauve,
+				5.5px 6px 0 0 vars.$mauve,
+				6px 7px 0 0 vars.$mauve,
+				6.5px 8px 0 0 vars.$mauve;
 
 			@include mixin.breakpoint(desktop) {
-				max-height: 348px;
-				max-width: 348px;
+				max-height: 228px;
+				max-width: 228px;
+				min-height: 148px;
+				min-width: 148px;
+			}
+			@include mixin.breakpoint(desktopXL) {
+				max-height: 250px;
+				max-width: 250px;
 				min-height: 148px;
 				min-width: 148px;
 			}
@@ -64,7 +105,15 @@
 		align-items: center;
 		gap: 1.5rem;
 
-		&__text{
+		@include mixin.breakpoint(desktop) {
+			padding-top: 124px;
+		}
+
+		@include mixin.breakpoint(desktop) {
+			padding-top: 174px;
+		}
+
+		&__text {
 			text-align: justify;
 		}
 
@@ -74,7 +123,7 @@
 			justify-content: center;
 			flex-wrap: wrap;
 			gap: 1.5rem;
-			margin-top: 1.25rem;	
+			margin-top: 1.25rem;
 
 			@include mixin.breakpoint(desktop) {
 				width: 100%;
@@ -84,4 +133,30 @@
 		}
 	}
 
+}
+
+.section-about__about-background-image {
+	position: absolute;
+	bottom: 12px;
+	left: 24px;
+	z-index: -1;
+	background-image: url('../../assets/images/gems-white.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	width: 308px;
+	height: 270px;
+
+	@include mixin.breakpoint(desktopXL) {
+		width: 367px;
+		height: 375px;
+	}
+
+	@include mixin.breakpoint(desktopXL) {
+		width: 467px;
+		height: 475px;
+	}
+
+	// width: 538px;
+	// height: 500px;
 }
