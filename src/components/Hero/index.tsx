@@ -33,7 +33,7 @@ function Hero() {
             >
               me contacter
               {' '}
-              <AiFillLinkedin style={{ fontSize: '26px', color: 'inherit' }} />
+              <AiFillLinkedin style={{ fontSize: '30px', color: 'inherit' }} />
             </a>
             <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary">Mon portfolio</a></button>
           </div>
