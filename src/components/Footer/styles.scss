@@ -10,40 +10,43 @@
     padding: 2.5rem;
     gap: 2.5rem;
 
-    &__container{
+    &__container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 6rem;
         width: 100%;
-        
-        &__logo{
-            height:120px;
+
+        &__logo {
+            height: 120px;
             // width: 80px;
             // height: 36px;
         }
 
-        &__social-media{
+        &__social-media {
             width: fit-content;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap:1rem;
+            gap: 1rem;
         }
     }
 
-    &__copyright-text {
-        font-size: 1rem;
-        font-weight: 300;
+    &__copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:8px;
+
+        &-text,
+        &-text a {
+            font-size: 1rem;
+            color: vars.$white-fade;
+            letter-spacing: 1px;
+        }
     }
+
 }
-
-
-
-
-
-
-
-
