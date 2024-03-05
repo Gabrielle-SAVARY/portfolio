@@ -1,13 +1,14 @@
 import { AiFillLinkedin } from 'react-icons/ai';
-import HeroImg6 from '../../assets/images/background12-crop-miror.png';
 import HeroImg7 from '../../assets/images/workspace-background.png';
+import PlanteBackground from '../../assets/images/plante.jpg';
 
-import './styles.scss';
+import './styles.scss'; // Import the styles
 
 function Hero() {
   return (
     <section id="sectionHero" className="sectionOne">
       <div className="hero__container">
+        <img src={PlanteBackground} alt="plante en pot suspendue" className="hero__container__img-plante-background" />
         <div className="presentation">
           <div className="presentation__heading">
             <h1 className="presentation__heading__title">
@@ -18,6 +19,8 @@ function Hero() {
           </div>
           <div className="presentation__texts">
             <p className="presentation__text__paragraph">
+              Bienvenue sur mon portfolio !
+              <br />
               Je m&apos;appelle Gabrielle Savary.
               Je travaille sur un environnement fullstack javascript avec React et Node.js.
               <br />
