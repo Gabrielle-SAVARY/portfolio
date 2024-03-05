@@ -2,6 +2,7 @@ import { useState } from 'react';
 import BtnMenuMobile from './BtnMenuMobile';
 import SocialMedia from '../SocialMedia';
 import portfolioLogo from '../../assets/images/Logo-portfolio_primary.png';
+import gemsMobile from '../../assets/images/gems-mobile.png';
 import './styles.scss';
 
 function Header() {
@@ -29,7 +30,7 @@ function Header() {
       />
       <nav className={classnameHeaderNavbar}>
         <ul className="header__navbar__menu-links">
-          <li><a href="#sectionPortfolio">portfolio</a></li>
+          <li><a href="#sectionPortfolio">Mes projets</a></li>
           <li><a href="#sectionAbout">À propos</a></li>
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li>
@@ -38,6 +39,11 @@ function Header() {
               <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="primary" />
             </div>
           </li>
+          { isMobileMenuOpen && (
+          <li className="header__navbar--open__menu-links__img-container">
+            <img src={gemsMobile} alt="gemmes scintillantes" className="header__navbar--open__menu-links__img-container__img" />
+          </li>
+          )}
         </ul>
 
       </nav>

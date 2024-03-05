@@ -24,6 +24,13 @@ body {
   font-weight: 500;
   line-height: normal;
 
+  // letter-spacing: 1.5px;
+  // text-shadow:
+  //   -0.25px -0.25px 0 vars.$primary-color,
+  //   0.25px -0.25px 0 vars.$primary-color,
+  //   -0.25px 0.25px 0 vars.$primary-color,
+  //   0.25px 0.25px 0 vars.$primary-color;
+
   @include mixin.breakpoint(tablet) {
     font-size: 1.35rem;
   }
