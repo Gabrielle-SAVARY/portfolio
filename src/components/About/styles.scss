@@ -3,21 +3,26 @@
 
 
 #sectionAbout {
-	min-height: calc(100vh - 6rem);
+	min-height: calc(100vh - 8rem);
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background-color: vars.$primary-color;
-	padding-top: calc(vars.$headerHeight + 2rem);
+	background-image: linear-gradient(to bottom, #511a3c,#511a3c, #802e4a, #af4852, #d76a52, #f79250);
 	/* Compense la hauteur de l'en-tête pour centrer le container*/
 	position: relative;
 	z-index: 1;
 
+	padding: 1rem;
+
+	@include mixin.breakpoint(tablet) {
+		padding: 2rem;
+	}
 	@include mixin.breakpoint(desktop) {
-		flex-flow: column;
+		padding: 3rem;
 		justify-content: center;
 		align-items: center;
+		gap: 2rem;
 	}
 }
 
@@ -25,7 +30,7 @@
 	position: absolute;
 	top: -40px;
 	left: 0;
-	height: 170px;
+	height: vars.$scallopedBorderHeight;
 	width: 100%;
 	background-color: vars.$primary-color;
 
@@ -37,10 +42,6 @@
 	mask: var(--mask);
 }
 
-.about-title {
-	color: vars.$secondary-color;
-}
-
 .about {
 	flex-grow: 1;
 	display: flex;
@@ -48,73 +49,110 @@
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
-	padding: 4rem;
-	margin-bottom: 4rem;
-	border-radius: 25px;
-	background-color: vars.$white-fade-transparent;
 
+	margin-top: calc(vars.$scallopedBorderHeight/ 2);
+	margin-bottom: calc(vars.$gemsImgAboutSectionMobile );
+
+	@include mixin.breakpoint(tablet) {
+	}
 	@include mixin.breakpoint(desktop) {
+		max-width: 90%;
 		flex-direction: row;
 		align-items: flex-start;
 		gap: 4rem;
-		max-width: 75%;
+		margin-bottom: 4rem;
+		margin-right: 2rem;
+		gap: 2rem;
+	}
+	
+	@include mixin.breakpoint(desktopXL) {
+		max-width: 80%;
+		margin-bottom: 7rem;
+		margin-right: 4rem;
 	}
 
-	&__image {
+	&__header {
 		display: flex;
+		flex-flow: row wrap;
 		justify-content: center;
+		gap:1rem;
+		width: 100%;
 
-		&-portrait {
-			max-height: 188px;
-			max-width: 188px;
-			min-height: 148px;
-			min-width: 148px;
+		@include mixin.breakpoint(desktop) {
+			flex-flow: row nowrap;
+		}
+
+		&__img {
 			object-fit: cover;
-			border-radius: 25px;
-
-			// SHADOW
-			box-shadow:
-				0.5px 1px 0 0 vars.$mauve,
-				1.5px 2px 0 0 vars.$mauve,
-				2.5px 3px 0 0 vars.$mauve,
-				3.5px 4px 0 0 vars.$mauve,
-				4.5px 5px 0 0 vars.$mauve,
-				5.5px 6px 0 0 vars.$mauve,
-				6px 7px 0 0 vars.$mauve,
-				6.5px 8px 0 0 vars.$mauve;
-
+			max-width: 80%;
 			@include mixin.breakpoint(desktop) {
-				max-height: 228px;
-				max-width: 228px;
-				min-height: 148px;
-				min-width: 148px;
+				max-width: 20%;			
+				min-height: 300px;
+				min-width: 300px;
 			}
 			@include mixin.breakpoint(desktopXL) {
-				max-height: 250px;
-				max-width: 250px;
-				min-height: 148px;
-				min-width: 148px;
+				max-width: 400px;
+				max-height: 400px;				
 			}
+
+		}
+		&__title{
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
 	&__container {
+		flex-grow: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 1.5rem;
+		border-radius: 25px;
+		padding: 3rem 2rem;
+
+		margin-bottom: 150px;
+
+		background-color: vars.$white-fade-transparent;
+					--mask: 
+			linear-gradient(#000 0 0) 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
+			radial-gradient(6px,#0000 98%,#000) 0 -6px/11.1px 12px round no-repeat,
+			radial-gradient(6px,#0000 98%,#000) 0 calc(100% + 6px)/11.1px 12px round no-repeat,
+			radial-gradient(6px,#0000 98%,#000) -6px 0/12px 11.1px no-repeat round,
+			radial-gradient(6px,#0000 98%,#000) calc(100% + 6px) 0/12px 11.1px no-repeat round;
+		clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px);
+		-webkit-mask: var(--mask);
+						mask: var(--mask);
 
 		@include mixin.breakpoint(desktop) {
-			padding-top: 124px;
+			padding: 4rem 5rem 4rem;
+			max-width: 80%;		
 		}
 
 		@include mixin.breakpoint(desktop) {
-			padding-top: 174px;
+		
 		}
 
 		&__text {
 			text-align: justify;
+		}
+
+		&__img {
+			width: 100px;
+			height: 50px;
+
+			@include mixin.breakpoint(desktop){
+				width: 140px;
+				height: 70px;
+			}
+			@include mixin.breakpoint(desktopXL){
+				width: 160px;
+				height: 80px;
+			}
 		}
 
 		&__links {
@@ -126,9 +164,7 @@
 			margin-top: 1.25rem;
 
 			@include mixin.breakpoint(desktop) {
-				width: 100%;
 				flex-direction: row;
-				justify-content: flex-start;
 			}
 		}
 	}
@@ -138,25 +174,25 @@
 .section-about__about-background-image {
 	position: absolute;
 	bottom: 12px;
-	left: 24px;
+
 	z-index: -1;
 	background-image: url('../../assets/images/gems-white.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 
-	width: 308px;
-	height: 270px;
+	width: 262px;
+	height: vars.$gemsImgAboutSectionMobile;
 
-	@include mixin.breakpoint(desktopXL) {
+	@include mixin.breakpoint(desktop) {
+		bottom: 12px;
+		left: 24px;
 		width: 367px;
 		height: 375px;
 	}
 
 	@include mixin.breakpoint(desktopXL) {
+		left: 64px;
 		width: 467px;
 		height: 475px;
 	}
-
-	// width: 538px;
-	// height: 500px;
 }
