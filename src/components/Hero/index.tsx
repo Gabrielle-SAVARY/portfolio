@@ -21,8 +21,7 @@ function Hero() {
             <p className="presentation__text__paragraph">
               Bienvenue sur mon portfolio !
               <br />
-              Je m&apos;appelle Gabrielle Savary.
-              Je travaille sur un environnement fullstack javascript avec React et Node.js.
+              Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript avec React et Node.js.
               <br />
               <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
             </p>

@@ -3,7 +3,7 @@ $purple-dark: #511A3C;
 $mauve: #886073;
 $mauve-light:#b8a0a9;
 $white-fade: #faf7ed;
-$white-fade-transparent:rgba(250, 247, 237, 0.6);
+$white-fade-transparent:rgba(250, 247, 237, 0.55);
 $orange:#F79250;
 $orange-light:#F6E2D5;
 $gray-dark:#312F28;
@@ -26,7 +26,7 @@ $footer-backGround-color:$gray-dark;
 //POLICES
 // $text-font: "Quicksand", sans-serif, ;
 $heading-font: "Pompiere", sans-serif;
-$text-font: "Pompiere", sans-serif;
+$text-font:"Noto Sans Mono", monospace;
 
 // $text-font: "IBM Plex Mono", monospace;
 // $text-font: "Roboto", sans-serif;
@@ -36,4 +36,6 @@ $text-font: "Pompiere", sans-serif;
 
 //TAILLES
 $headerHeight: 6rem;
+$gemsImgAboutSectionMobile: 270px;
+$scallopedBorderHeight: 170px;
 

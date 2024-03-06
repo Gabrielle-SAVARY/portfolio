@@ -39,13 +39,17 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap:8px;
+        gap:12px;
 
         &-text,
         &-text a {
-            font-size: 1rem;
+            font-size: 1.4rem;
             color: vars.$white-fade;
             letter-spacing: 1px;
+        }
+
+        &-text:nth-child(1){
+            font-size: 1.8rem;
         }
     }
 

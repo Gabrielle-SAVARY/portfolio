@@ -20,23 +20,25 @@ body {
   // FONT
   font-family: vars.$text-font;
   color: vars.$primary-color;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: normal;
+  font-weight: 400;
+  font-size: 1rem;
 
-  // letter-spacing: 1.5px;
-  // text-shadow:
-  //   -0.25px -0.25px 0 vars.$primary-color,
-  //   0.25px -0.25px 0 vars.$primary-color,
-  //   -0.25px 0.25px 0 vars.$primary-color,
-  //   0.25px 0.25px 0 vars.$primary-color;
 
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.35rem;
-  }
+  word-spacing: 4px;
+  letter-spacing: 1px;
 
+
+  // @include mixin.breakpoint(tablet) {
+  //   font-size: 1.25rem;
+  //   line-height: 1.25;
+  // }
   @include mixin.breakpoint(desktop) {
-    font-size: 1.45rem;
+    font-size: 1.5rem;
+    line-height: 1.25;
+  }
+  @include mixin.breakpoint(desktopXL) {
+    // font-size: 2rem;
+    // line-height: 1.35;
   }
 
 }
@@ -44,7 +46,16 @@ body {
 section {
   min-height: 100vh;
   min-width: 100vw;
-  padding: 2rem;
+  padding: 1.5rem;
+
+  @include mixin.breakpoint(tablet) {
+    padding: 2rem;
+  }
+
+
+  @include mixin.breakpoint(desktop) {
+    padding: 2.5rem;
+  }
 
   @include mixin.breakpoint(desktopXL) {
     padding: 3rem;
@@ -133,16 +144,17 @@ em {
 .btn {
   display: flex;
   min-height: 48px;
-  padding: 12px 20px;
+  padding: 8px 16px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
 
-  font-size: 1.45rem;
+  font-size: 1.25rem;
 
   @include mixin.breakpoint(tablet) {
     font-size: 1.50rem;
+    padding: 12px 20px;
   }
 
   @include mixin.breakpoint(tablet) {
@@ -175,16 +187,17 @@ a:hover {
 .link {
   display: flex;
   min-height: 48px;
-  padding: 12px 20px;
+  padding: 8px 16px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 16px;
 
-  font-size: 1.45rem;
+  font-size: 1.25rem;
 
   @include mixin.breakpoint(tablet) {
     font-size: 1.50rem;
+    padding: 12px 20px;
   }
   @include mixin.breakpoint(tablet) {
     font-size: 1.55rem;
