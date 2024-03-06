@@ -48,22 +48,24 @@
 
 /*HEADER BAR MENU - MENU MOBILE OUVERT*/
 .header__navbar--open {
+	flex-grow: 1;
+	height: calc(100vh - (vars.$headerHeight + 4rem));
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 1.25rem;
-	margin-top: 50%; // centrer le menu mobile
+	margin-top: calc(vars.$headerHeight + 4rem);
 
 	&__menu-links__img-container {
 		display: flex;
 		justify-content: center;
+		width: 100%;
+		height: 100%;
 
 		&__img {
-			position: absolute;
-			bottom: 8px;
-			max-height: fit-content;
-			width: 100%;	
+			object-fit: contain;
+			max-width: 100%;
 		}
 	}
 
@@ -92,6 +94,7 @@
 
 // LISTE MENU
 .header__navbar__menu-links {
+	flex-grow: 1;
 	height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -117,11 +120,6 @@
   @include mixin.breakpoint(desktopXL) {
     font-size: 1.50rem;
   }
-
-
-
-
-
 }
 
 // ITEM LISTE MENU - MENU MOBILE OUVERT
@@ -130,6 +128,16 @@
 	padding: 1rem 1rem 1.5rem;
 	text-transform: uppercase;
 	font-size: 1.6rem;
+}
+ // image 
+.header__navbar__menu-links li:last-child {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 1rem;
+
 }
 
 .header__navbar__menu-links__separator {
