@@ -4,6 +4,7 @@ import diamondImg from '../../assets/images/gem-diamond.png';
 import portraitImage from '../../assets/images/portrait-vintage.png';
 
 import './styles.scss';
+import MyLink from '../MyLink';
 
 function About() {
   return (
@@ -26,36 +27,28 @@ function About() {
             Les compétences ne sont pas statiques, elles évoluent constamment. Bien qu'encore qu'à l'état brut, mes compétences, peuvent être façonnées et polies en entreprise.
           </p>
           <div className="about__container__links">
-            <a
-              href={CV}
-              className="link link--secondary"
+            <MyLink
+              label="Télécharger mon cv"
+              path={CV}
               target="_blank"
-              rel="noreferrer"
-            >
-              Télécharger mon CV
-            </a>
+              classColor="link--secondary"
+              iconName=""
+            />
+            <MyLink
+              label="mon github"
+              path="https://github.com/Gabrielle-SAVARY?tab=repositories"
+              target="_blank"
+              classColor="link--secondary"
+              iconName="github"
+            />
+            <MyLink
+              label="me contacter"
+              path="https://www.linkedin.com/in/gabrielle-savary/https://www.linkedin.com/in/gabrielle-savary/"
+              target="_blank"
+              classColor="link--primary"
+              iconName="linkedin"
 
-            <a
-              href="https://github.com/Gabrielle-SAVARY?tab=repositories"
-              className="link link--secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              mon github
-              {' '}
-              <AiFillGithub style={{ fontSize: '30px', color: 'inherit' }} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/gabrielle-savary/"
-              className="link link--primary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              me contacter
-              {' '}
-              <AiFillLinkedin style={{ fontSize: '30px', color: 'inherit' }} />
-            </a>
-
+            />
           </div>
           <img src={diamondImg} alt="dessin diamant" className="about__container__img" />
 

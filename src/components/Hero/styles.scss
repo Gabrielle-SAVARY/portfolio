@@ -84,10 +84,12 @@
 		@include mixin.breakpoint(tablet) {
 			width: 100%;
 			flex-direction: row;
+	
 		}
 
 		@include mixin.breakpoint(desktop) {
 			justify-content: flex-start;
+			align-items: center;
 		}
 	}
 

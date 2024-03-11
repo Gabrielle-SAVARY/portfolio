@@ -22,25 +22,14 @@ body {
   color: vars.$primary-color;
   font-weight: 400;
   font-size: 1rem;
-
-
   word-spacing: 4px;
   letter-spacing: 1px;
-
-
-  // @include mixin.breakpoint(tablet) {
-  //   font-size: 1.25rem;
-  //   line-height: 1.25;
-  // }
+  line-height: 1.08;
+  line-height: 1.2;
   @include mixin.breakpoint(desktop) {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     line-height: 1.25;
   }
-  @include mixin.breakpoint(desktopXL) {
-    // font-size: 2rem;
-    // line-height: 1.35;
-  }
-
 }
 
 section {
@@ -51,16 +40,12 @@ section {
   @include mixin.breakpoint(tablet) {
     padding: 2rem;
   }
-
-
   @include mixin.breakpoint(desktop) {
     padding: 2.5rem;
   }
-
   @include mixin.breakpoint(desktopXL) {
     padding: 3rem;
   }
-
 }
 
 
@@ -92,7 +77,7 @@ h2 {
   color: vars.$primary-color;
   margin-bottom: 2.5rem;
   font-family: vars.$heading-font;
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -106,13 +91,13 @@ h2 {
 
 
   @include mixin.breakpoint(tablet) {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
   }
   @include mixin.breakpoint(desktop) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   @include mixin.breakpoint(desktopXL) {
-    font-size: 4.75rem;
+    font-size: 3.25rem;
   }
 }
 
@@ -132,12 +117,6 @@ em {
     -2px 2px 0 vars.$primary-color,
     2px 2px 0 vars.$primary-color;
 
-  //FULL ORANGE
-  // text-shadow:
-  // -2px -2px 0 vars.$highlight-color,
-  // 2px -2px 0 vars.$highlight-color,
-  // -2px 2px 0 vars.$highlight-color,
-  // 2px 2px 0 vars.$highlight-color;
 }
 
 // BOUTONS ET LIENS
@@ -148,21 +127,13 @@ em {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
-
+  gap: 16px;  
   font-size: 1.25rem;
-
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.50rem;
-    padding: 12px 20px;
+  @include mixin.breakpoint(desktop) {
+    font-size: 1.35rem;
   }
-
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.55rem;
-  }
-
   @include mixin.breakpoint(desktopXL) {
-    font-size: 1.60rem;
+    font-size: 1.45rem;
   }
 
   // RETRO DESIGN    
@@ -184,7 +155,7 @@ a:hover {
   color: vars.$highlight-color;
 }
 
-.link {
+.link-like-btn {
   display: flex;
   min-height: 48px;
   padding: 8px 16px;
@@ -192,18 +163,12 @@ a:hover {
   justify-content: center;
   align-items: center;
   gap: 16px;
-
   font-size: 1.25rem;
-
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.50rem;
-    padding: 12px 20px;
-  }
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.55rem;
+  @include mixin.breakpoint(desktop) {
+    font-size: 1.35rem;
   }
   @include mixin.breakpoint(desktopXL) {
-    font-size: 1.60rem;
+    font-size: 1.4rem;
   }
 
   // RETRO DESIGN      
@@ -214,15 +179,15 @@ a:hover {
 
 // EFFETS RETRO DESIGN
 .btn:hover,
-.link:hover {
+.link-like-btn:hover {
   transform: translate(calc(4px - 1px));
   box-shadow: calc(4px - 3px) calc(4px - 3px);
 }
 
 .btn:focus,
-.link:focus,
+.link-like-btn:focus,
 .btn:active,
-.link:active {
+.link-like-btn:active {
   box-shadow: inset calc(4px - 2px) calc(4px - 2px) vars.$primary-color;
   transform: translate(calc(4px - 1px));
   text-shadow:

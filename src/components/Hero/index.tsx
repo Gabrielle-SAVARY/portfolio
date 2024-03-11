@@ -1,5 +1,6 @@
 import { AiFillLinkedin } from 'react-icons/ai';
 import HeroImg7 from '../../assets/images/workspace-background.png';
+import MyLink from '../MyLink';
 import PlanteBackground from '../../assets/images/plante.jpg';
 
 import './styles.scss'; // Import the styles
@@ -21,23 +22,26 @@ function Hero() {
             <p className="presentation__text__paragraph">
               Bienvenue sur mon portfolio !
               <br />
-              Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript avec React et Node.js.
+              Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript.
               <br />
               <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
             </p>
           </div>
           <div className="presentation__links">
-            <a
-              href="https://www.linkedin.com/in/gabrielle-savary/"
-              className="link link--primary"
+            <MyLink
+              label="me contacter"
+              path="https://www.linkedin.com/in/gabrielle-savary/"
               target="_blank"
-              rel="noreferrer"
-            >
-              me contacter
-              {' '}
-              <AiFillLinkedin style={{ fontSize: '30px', color: 'inherit' }} />
-            </a>
-            <button type="button"><a href="#sectionPortfolio" className="btn btn--secondary">Mon portfolio</a></button>
+              classColor="link--primary"
+              iconName="linkedin"
+            />
+            <MyLink
+              label="Voir mes projets"
+              path="#sectionPortfolio"
+              target=""
+              classColor="link--secondary"
+              iconName=""
+            />
           </div>
         </div>
 
