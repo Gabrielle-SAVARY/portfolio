@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import CardProject from '../CardProject';
+import { useEffect, useState } from 'react';
+import CardProject from './CardProject';
 import { IMyProject } from '../../@types/dataMyProject';
 import './styles.scss';
 
-// TODO améliorer gestion erreur fetch
-
-function Portfolio() {
+function PortfolioProjects() {
   // Liste des projets
   const [projectsList, setProjectsList] = useState<IMyProject[]>([]);
 
@@ -25,9 +23,9 @@ function Portfolio() {
   }, []);
 
   return (
-    <section id="sectionPortfolio" className="sectionTwo">
+    <section id="sectionPortfolioProjects" className="portfolio-projects">
       <h2>MES PROJETS</h2>
-      <div className="portfolio__container">
+      <div className="portfolio-projects__container">
         {projectsList.map((project) => (
           <CardProject
             key={project.id}
@@ -54,4 +52,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default PortfolioProjects;

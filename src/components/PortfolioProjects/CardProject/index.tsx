@@ -1,6 +1,6 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaPlay } from 'react-icons/fa';
-import { IMyProject } from '../../@types/dataMyProject';
+import { IMyProject } from '../../../@types/dataMyProject';
 
 import './styles.scss';
 

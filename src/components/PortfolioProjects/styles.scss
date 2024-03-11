@@ -1,7 +1,7 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-#sectionPortfolio {
+#sectionPortfolioProjects {
 	background-color: vars.$highlight-light;
 	padding-top: calc(vars.$headerHeight + 2rem);
 	color: vars.$primary-color;
@@ -14,7 +14,7 @@
 	}
 }
 
-.portfolio__container{
+.portfolio-projects__container{
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;

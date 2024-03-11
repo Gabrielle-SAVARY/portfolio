@@ -1,7 +1,7 @@
 import About from '../About';
 import Hero from '../Hero';
 import Layout from '../Layout';
-import Portfolio from '../Portfolio';
+import PortfolioProjects from '../PortfolioProjects';
 import './styles.scss';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <Layout>
       <main>
         <Hero />
-        <Portfolio />
+        <PortfolioProjects />
         <About />
       </main>
     </Layout>
