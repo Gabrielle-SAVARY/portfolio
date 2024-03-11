@@ -1,9 +1,7 @@
-import { AiFillLinkedin } from 'react-icons/ai';
-import HeroImg7 from '../../assets/images/workspace-background.png';
-import MyLink from '../MyLink';
+import HeroBackgroundImg from '../../assets/images/workspace-background.png';
 import PlanteBackground from '../../assets/images/plante.jpg';
-
-import './styles.scss'; // Import the styles
+import MyLink from '../MyLink';
+import './styles.scss';
 
 function Hero() {
   return (
@@ -15,7 +13,7 @@ function Hero() {
             <h1 className="presentation__heading__title">
               Développeuse web
               <br />
-              <em className="heading-font-accent">Javascript Fullstack</em>
+              <em className="font-accent__heading">Javascript Fullstack</em>
             </h1>
           </div>
           <div className="presentation__texts">
@@ -24,7 +22,7 @@ function Hero() {
               <br />
               Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript.
               <br />
-              <em>Je suis à la recherche d&apos;une alternance à partir de 2024</em>
+              <em className="font-accent__text-highlight">Je suis à la recherche d&apos;une alternance à partir de 2024</em>
             </p>
           </div>
           <div className="presentation__links">
@@ -46,7 +44,7 @@ function Hero() {
         </div>
 
         <div className="hero-img__container">
-          <img className="hero-img__image" src={HeroImg7} alt="anime girl portrait with headphone" />
+          <img className="hero-img__image" src={HeroBackgroundImg} alt="anime girl portrait with headphone" />
         </div>
       </div>
 

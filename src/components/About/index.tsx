@@ -1,10 +1,8 @@
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 import CV from '../../assets/CV PORTFOLIO développeur web .pdf';
 import diamondImg from '../../assets/images/gem-diamond.png';
 import portraitImage from '../../assets/images/portrait-vintage.png';
-
-import './styles.scss';
 import MyLink from '../MyLink';
+import './styles.scss';
 
 function About() {
   return (
@@ -17,7 +15,7 @@ function About() {
         <div className="about__container">
           <h2 className="about__header__title">À propos</h2>
           <p className="about__container__text">
-            <em> Tout développeur &quot; senior&quot; a été un &quot;junior&quot; qui a pu monter en compétences et avoir de l'expérience en entreprise.</em>
+            <em className="font-accent__text-offWhite"> Tout développeur &quot; senior&quot; a été un &quot;junior&quot; qui a pu monter en compétences et avoir de l'expérience en entreprise.</em>
           </p>
           <p className="about__container__text">
             Je suis à la recherche d'une opportunité professionnelle afin de m'insérer dans une équipe dynamique que ce soit en alternance ou en CDI.

@@ -102,21 +102,28 @@ h2 {
 }
 
 
+// TEXT ACCENT
 em {
-  -webkit-text-fill-color: vars.$highlight-color;
+  font-weight: bold;
+}
+.font-accent__text {
+  color: vars.$primary-color;
+}
+.font-accent__text-highlight {
   color: vars.$highlight-color;
 }
-
-.heading-font-accent {
+.font-accent__text-offWhite {
+  color: vars.$secondary-color;
+}
+.font-accent__heading {
   color: vars.$highlight-color;
   -webkit-text-fill-color: vars.$highlight-color;
-
+  letter-spacing: 4px;
   text-shadow:
     -2px -2px 0 vars.$primary-color,
     2px -2px 0 vars.$primary-color,
     -2px 2px 0 vars.$primary-color,
     2px 2px 0 vars.$primary-color;
-
 }
 
 // BOUTONS ET LIENS
