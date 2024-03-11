@@ -30,8 +30,8 @@ function Header() {
       />
       <nav className={classnameHeaderNavbar}>
         <ul className="header__navbar__menu-links">
-          <li><a href="#sectionPortfolio">Mes projets</a></li>
-          <li><a href="#sectionAbout">À propos</a></li>
+          <li><a href="#sectionPortfolio" className="header__navbar__menu-links__link">Mes projets</a></li>
+          <li><a href="#sectionAbout" className="header__navbar__menu-links__link">À propos</a></li>
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li>
             <div className="header__navbar__menu-links__social-media">

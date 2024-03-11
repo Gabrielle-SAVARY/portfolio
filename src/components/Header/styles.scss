@@ -69,9 +69,7 @@
 		}
 	}
 
-	
-	}
-
+}
 
 .header__logo {
 	height: 88px;
@@ -101,25 +99,32 @@
 	align-items: center;
 	list-style: none;
 
-	font-size: 1.65rem;
+	&__link {
+		transition: all 0.3s ease 0s;
+		text-shadow:
+			-0.1px -0.1px 0 vars.$primary-color,
+			0.1px -0.1px 0 vars.$primary-color,
+			-0.1px 0.1px 0 vars.$primary-color,
+			0.1px 0.1px 0 vars.$primary-color;
+		font-size: 1.15rem;
 
-	  text-shadow:
-  -0.1px -0.1px 0 vars.$primary-color,
-  0.1px -0.1px 0 vars.$primary-color,
-  -0.1px 0.1px 0 vars.$primary-color,
-  0.1px 0.1px 0 vars.$primary-color;
+		@include mixin.breakpoint(desktop) {
+			font-size: 1.25rem;
+		}
 
-	
-  font-size: 1.35rem;
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.4rem;
-  }
-  @include mixin.breakpoint(tablet) {
-    font-size: 1.45rem;
-  }
-  @include mixin.breakpoint(desktopXL) {
-    font-size: 1.50rem;
-  }
+		@include mixin.breakpoint(desktopXL) {
+			font-size: 1.30rem;
+		}
+
+		&:hover {
+			color: vars.$highlight-color;
+			text-shadow:
+				-0.1px -0.1px 0 vars.$highlight-color,
+				0.1px -0.1px 0 vars.$highlight-color,
+				-0.1px 0.1px 0 vars.$highlight-color,
+				0.1px 0.1px 0 vars.$highlight-color;
+		}
+	}
 }
 
 // ITEM LISTE MENU - MENU MOBILE OUVERT
@@ -127,9 +132,9 @@
 	display: inline-flex;
 	padding: 1rem;
 	text-transform: uppercase;
-	font-size: 1.6rem;
 }
- // image 
+
+// image 
 .header__navbar__menu-links li:last-child {
 	flex-grow: 1;
 	display: flex;
@@ -137,7 +142,6 @@
 	justify-content: flex-end;
 	align-items: center;
 	padding: 1rem;
-
 }
 
 .header__navbar__menu-links__separator {
@@ -154,15 +158,6 @@
 	gap: 1rem;
 }
 
-/*transition menu*/
-.nav_links li a {
-	transition: all 0.3s ease 0s;
-}
-
-/*  hover  */
-.nav_links li a:hover {
-	color: vars.$highlight-color;
-}
 
 
 @media (min-width: 992px) {

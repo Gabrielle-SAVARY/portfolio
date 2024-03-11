@@ -2,55 +2,66 @@
 @use '../../styles/vars';
 
 .footer {
-    background-color: vars.$footer-backGround-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2.5rem;
-    gap: 2.5rem;
+	background-color: vars.$footer-backGround-color;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2.5rem;
+	gap: 2.5rem;
 
-    &__container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 6rem;
-        width: 100%;
+	&__container {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+		width: 100%;
 
-        &__logo {
-            height: 120px;
-            // width: 80px;
-            // height: 36px;
-        }
+		&__logo {
+			height: 90px;
+			// width: 80px;
+			// height: 36px;
+		}
 
-        &__social-media {
-            width: fit-content;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
-    }
+		&__social-media {
+			width: fit-content;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+		}
+	}
 
-    &__copyright {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap:12px;
+	&__copyright {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
 
-        &-text,
-        &-text a {
-            font-size: 1.4rem;
-            color: vars.$white-fade;
-            letter-spacing: 1px;
-        }
-
-        &-text:nth-child(1){
-            font-size: 1.8rem;
-        }
-    }
+		&-text,
+		&-text a {
+			color: vars.$white-fade;
+			letter-spacing: 1px;
+			font-size: 0.85rem;
+			@include mixin.breakpoint(desktop) {
+				font-size: 0.9rem;
+			}
+			@include mixin.breakpoint(desktopXL) {
+				font-size: 1rem;
+			}
+		}
+		&-text:nth-child(1) {
+			font-size: 0.95rem;
+			@include mixin.breakpoint(desktop) {
+				font-size: 1rem;
+			}
+			@include mixin.breakpoint(desktop) {
+				font-size: 1.08rem;
+			}
+		}
+	}
 
 }
