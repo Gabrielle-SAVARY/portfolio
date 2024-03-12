@@ -28,13 +28,14 @@
 	position: fixed;
 	top: 0;
 	z-index: 30;
-
-	backdrop-filter: blur(2px);
 	background-color: vars.$primary-color-light-60;
 }
 
 .header--open a {
-	color: vars.$primary-color;
+	color: vars.$primary-color;	
+	&:hover {
+		color: vars.$secondary-color;
+	}
 }
 
 /*HEADER BAR MENU*/
@@ -68,7 +69,6 @@
 			max-width: 100%;
 		}
 	}
-
 }
 
 .header__logo {
@@ -100,13 +100,13 @@
 	list-style: none;
 
 	&__link {
-		transition: all 0.3s ease 0s;
+		transition: all 0.3s ease;
 		text-shadow:
 			-0.1px -0.1px 0 vars.$primary-color,
 			0.1px -0.1px 0 vars.$primary-color,
 			-0.1px 0.1px 0 vars.$primary-color,
 			0.1px 0.1px 0 vars.$primary-color;
-		font-size: 1.15rem;
+		font-size: 1.45rem;
 
 		@include mixin.breakpoint(desktop) {
 			font-size: 1.25rem;
@@ -116,13 +116,12 @@
 			font-size: 1.30rem;
 		}
 
-		&:hover {
-			color: vars.$highlight-color;
+		&:hover {	
 			text-shadow:
-				-0.1px -0.1px 0 vars.$highlight-color,
-				0.1px -0.1px 0 vars.$highlight-color,
-				-0.1px 0.1px 0 vars.$highlight-color,
-				0.1px 0.1px 0 vars.$highlight-color;
+				-0.1px -0.1px 0 vars.$secondary-color,
+				0.1px -0.1px 0 vars.$secondary-color,
+				-0.1px 0.1px 0 vars.$secondary-color,
+				0.1px 0.1px 0 vars.$secondary-color;
 		}
 	}
 }

@@ -9,6 +9,10 @@ function Header() {
   // State du toogle menu mobile
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   // Change le state du toogle menu mobile
   const changeMobileMenuIcon = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -30,13 +34,13 @@ function Header() {
       />
       <nav className={classnameHeaderNavbar}>
         <ul className="header__navbar__menu-links">
-          <li><a href="#sectionPortfolioProjects" className="header__navbar__menu-links__link">Mes projets</a></li>
-          <li><a href="#sectionAbout" className="header__navbar__menu-links__link">À propos</a></li>
+          <li><a href="#sectionPortfolioProjects" className="header__navbar__menu-links__link" onClick={handleCloseMobileMenu}>Mes projets</a></li>
+          <li><a href="#sectionAbout" className="header__navbar__menu-links__link" onClick={handleCloseMobileMenu}>À propos</a></li>
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li>
             <div className="header__navbar__menu-links__social-media">
-              <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="primary" />
-              <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="primary" />
+              <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="primary" handleCloseMobileMenu={handleCloseMobileMenu} />
+              <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="primary" handleCloseMobileMenu={handleCloseMobileMenu} />
             </div>
           </li>
           { isMobileMenuOpen && (
