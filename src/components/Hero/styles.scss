@@ -5,8 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;	
-	// min-height: calc(100vh - 292px);
-	min-height: calc(100vh - 100px);
+	min-height: calc(100vh - (vars.$headerHeight + 4px));
 	padding: 0;
 	background-image: url('../../assets/images/hero-background.png');
 	background-repeat: repeat;
@@ -25,14 +24,14 @@
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	padding: 2rem;
+	padding: 2rem 2rem 0;
 
 	@include mixin.breakpoint(desktop) {
 		flex-direction: row;	
 		max-width: 90%;		
 	}
 	@include mixin.breakpoint(desktop) {
-		padding: 3rem;
+		padding: 3rem 3rem 0;
 		max-width: 80%;	
 	}
 

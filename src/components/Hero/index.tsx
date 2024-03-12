@@ -22,7 +22,7 @@ function Hero() {
               <br />
               Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript.
               <br />
-              <em className="font-accent__text-highlight">Je suis à la recherche d&apos;une alternance à partir de 2024</em>
+              <em className="font-accent__text">Je suis à la recherche d&apos;une alternance en 2024.</em>
             </p>
           </div>
           <div className="presentation__links">

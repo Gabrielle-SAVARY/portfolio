@@ -27,8 +27,7 @@
 		6px 6px 0 0 vars.$primary-color;
 
 	&:hover {
-		// transform: scale(1.05);
-		overflow: hidden;
+		overflow: hidden;	
 	}
 
 	&__header {
@@ -57,11 +56,11 @@
 			font-size: 2rem;
 			color: vars.$primary-color;
 			text-transform: uppercase;
-			// text-shadow:
-			// 	-0.1px -0.1px 0 vars.$primary-color,
-			// 	0.1px -0.1px 0 vars.$primary-color,
-			// 	-0.1px 0.1px 0 vars.$primary-color,
-			// 	0.1px 0.1px 0 vars.$primary-color;
+			text-shadow:
+				-0.1px -0.1px 0 vars.$primary-color,
+				0.1px -0.1px 0 vars.$primary-color,
+				-0.1px 0.1px 0 vars.$primary-color,
+				0.1px 0.1px 0 vars.$primary-color;
 		}
 
 		&__project-technologies {
