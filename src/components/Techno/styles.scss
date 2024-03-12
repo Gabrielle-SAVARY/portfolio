@@ -1,0 +1,16 @@
+@use '../../styles/mixin';
+@use '../../styles/vars';
+
+#sectionTechno{
+	background-color: vars.$background-neutral-color;
+	padding-top: vars.$headerHeight;
+	color: vars.$primary-color;
+
+
+	@include mixin.breakpoint(desktop) {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+}
