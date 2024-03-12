@@ -1,3 +1,12 @@
+import CardTechno from './CardTechno';
+import logoJs from '../../assets/images/techno_logo/stack_javascript.png';
+import logoTypescript from '../../assets/images/techno_logo/stack_typeScript.png';
+import logoReact from '../../assets/images/techno_logo/stack_react.png';
+import logoSass from '../../assets/images/techno_logo/stack_sass.png';
+import logoNode from '../../assets/images/techno_logo/stack_nodeJs.png';
+import logoPostgreSQL from '../../assets/images/techno_logo/stack_postgreSQL.png';
+import logoSequelize from '../../assets/images/techno_logo/stack_sequelize.png';
+
 import './styles.scss';
 
 function Techno() {
@@ -5,7 +14,13 @@ function Techno() {
     <section id="sectionTechno" className="techno">
       <h2>Mes technos</h2>
       <div className="techno__container">
-        <span>test</span>
+        <CardTechno thumbnail={logoJs} imgAlt="logo de la techno" title="Javascript" />
+        <CardTechno thumbnail={logoTypescript} imgAlt="logo de la techno" title="TypeScript" />
+        <CardTechno thumbnail={logoReact} imgAlt="logo de la techno" title="React" />
+        <CardTechno thumbnail={logoSass} imgAlt="logo de la techno" title="Sass" />
+        <CardTechno thumbnail={logoNode} imgAlt="logo de la techno" title="Node" />
+        <CardTechno thumbnail={logoPostgreSQL} imgAlt="logo de la techno" title="PostgreSQL" />
+        <CardTechno thumbnail={logoSequelize} imgAlt="logo de la techno" title="Sequelize" />
       </div>
     </section>
   );

@@ -6,11 +6,28 @@
 	padding-top: vars.$headerHeight;
 	color: vars.$primary-color;
 
+	min-height: auto;
+
 
 	@include mixin.breakpoint(desktop) {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+	}
+}
+
+
+.techno__container{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2rem;
+
+	@include mixin.breakpoint(desktop) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 }
