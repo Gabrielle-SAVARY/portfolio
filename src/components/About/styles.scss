@@ -8,38 +8,22 @@
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: linear-gradient(to bottom, #511a3c,#511a3c, #802e4a, #af4852, #d76a52, #f79250);
-	/* Compense la hauteur de l'en-tête pour centrer le container*/
+	background-image: url('../../assets/images/hero-background.png');
+	padding: 1rem;
+
 	position: relative;
 	z-index: 1;
-
-	padding: 1rem;
 
 	@include mixin.breakpoint(tablet) {
 		padding: 2rem;
 	}
+
 	@include mixin.breakpoint(desktop) {
 		padding: 3rem;
 		justify-content: center;
 		align-items: center;
 		gap: 2rem;
 	}
-}
-
-.section-about__scalopped-border-top {
-	position: absolute;
-	top: -40px;
-	left: 0;
-	height: vars.$scallopedBorderHeight;
-	width: 100%;
-	background-color: vars.$primary-color;
-
-	// scalloped border
-	--mask:
-		linear-gradient(0deg, #0000 160px, #000 0) 0 80px,
-		radial-gradient(80px, #000 98%, #0000) 50%/128px 160px repeat space;
-	-webkit-mask: var(--mask);
-	mask: var(--mask);
 }
 
 .about {
@@ -49,25 +33,24 @@
 	justify-content: center;
 	align-items: center;
 	gap: 3rem;
+	min-height: calc(100vh - 12rem);
+	margin-top: vars.$headerHeight;
+	margin-bottom: calc(vars.$gemsImgAboutSectionMobile / 3);
 
-	margin-top: calc(vars.$scallopedBorderHeight/ 2);
-	margin-bottom: calc(vars.$gemsImgAboutSectionMobile );
+	@include mixin.breakpoint(tablet) {}
 
-	@include mixin.breakpoint(tablet) {
-	}
 	@include mixin.breakpoint(desktop) {
 		max-width: 90%;
 		flex-direction: row;
 		align-items: flex-start;
 		gap: 4rem;
-		margin-bottom: 4rem;
+		margin-bottom: 0;
 		margin-right: 2rem;
 		gap: 2rem;
 	}
-	
+
 	@include mixin.breakpoint(desktopXL) {
 		max-width: 80%;
-		margin-bottom: 7rem;
 		margin-right: 4rem;
 	}
 
@@ -75,7 +58,7 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
-		gap:1rem;
+		gap: 1rem;
 		width: 100%;
 
 		@include mixin.breakpoint(desktop) {
@@ -85,18 +68,20 @@
 		&__img {
 			object-fit: cover;
 			max-width: 80%;
+
 			@include mixin.breakpoint(desktop) {
-				max-width: 20%;			
+				max-width: 20%;
 				min-height: 300px;
 				min-width: 300px;
 			}
+
 			@include mixin.breakpoint(desktopXL) {
 				max-width: 400px;
-				max-height: 400px;				
+				max-height: 400px;
 			}
-
 		}
-		&__title{
+
+		&__title {
 			flex-grow: 1;
 			display: flex;
 			flex-direction: column;
@@ -114,46 +99,23 @@
 		gap: 1.5rem;
 		border-radius: 25px;
 		padding: 3rem 2rem;
-
 		margin-bottom: 150px;
-
 		background-color: vars.$white-fade-transparent;
-					--mask: 
-			linear-gradient(#000 0 0) 50%/calc(100% - 12px) calc(100% - 12px) no-repeat,
-			radial-gradient(6px,#0000 98%,#000) 0 -6px/11.1px 12px round no-repeat,
-			radial-gradient(6px,#0000 98%,#000) 0 calc(100% + 6px)/11.1px 12px round no-repeat,
-			radial-gradient(6px,#0000 98%,#000) -6px 0/12px 11.1px no-repeat round,
-			radial-gradient(6px,#0000 98%,#000) calc(100% + 6px) 0/12px 11.1px no-repeat round;
-		clip-path: polygon(12px 0,calc(100% - 12px) 0,100% 12px,100% calc(100% - 12px),calc(100% - 12px) 100%,12px 100%,0 calc(100% - 12px),0 12px);
-		-webkit-mask: var(--mask);
-						mask: var(--mask);
 
 		@include mixin.breakpoint(desktop) {
+			margin-bottom: 0;
 			padding: 4rem 5rem 4rem;
-			max-width: 80%;		
-		}
-
-		@include mixin.breakpoint(desktop) {
-		
+			max-width: 80%;
 		}
 
 		&__text {
 			text-align: justify;
-		}
 
-		&__img {
-			width: 100px;
-			height: 50px;
-
-			@include mixin.breakpoint(desktop){
-				width: 140px;
-				height: 70px;
-			}
-			@include mixin.breakpoint(desktopXL){
-				width: 160px;
-				height: 80px;
+			@include mixin.breakpoint(desktop) {
+				text-align: left;
 			}
 		}
+
 
 		&__links {
 			display: flex;
@@ -165,10 +127,39 @@
 
 			@include mixin.breakpoint(desktop) {
 				flex-direction: row;
+				align-items: flex-end;
 			}
+
+			&__contact-link {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				&__img {
+					width: 100px;
+					height: 50px;
+
+					@include mixin.breakpoint(desktop) {
+						width: 120px;
+						height: 60px;
+						margin-bottom: -6px;
+					}
+				}
+			}
+
+			&__contact-link a {
+				width: 100%;
+
+				@include mixin.breakpoint(desktop) {
+					width: auto;
+
+				}
+
+			}
+
 		}
 	}
-
 }
 
 .section-about__about-background-image {
@@ -176,23 +167,23 @@
 	bottom: 12px;
 
 	z-index: -1;
-	background-image: url('../../assets/images/gems-white.png');
+	background-image: url('../../assets/images/gems-purple.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 
-	width: 262px;
+	width: 270px;
 	height: vars.$gemsImgAboutSectionMobile;
 
 	@include mixin.breakpoint(desktop) {
 		bottom: 12px;
 		left: 24px;
-		width: 367px;
+		width: 370px;
 		height: 375px;
 	}
 
 	@include mixin.breakpoint(desktopXL) {
 		left: 64px;
-		width: 467px;
-		height: 475px;
+		width: 450px;
+		height: 455px;
 	}
 }
