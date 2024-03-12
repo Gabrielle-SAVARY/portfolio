@@ -1,38 +1,40 @@
 // COULEURS 
+//primary-color
 $purple-dark: #511A3C;
 $mauve: #886073;
-$mauve-light:#b8a0a9;
+$mauve-light:#b9a3b1;
+
+// secondary-color
 $white-fade: #faf7ed;
 $white-fade-transparent:rgba(250, 247, 237, 0.55);
+
+// highlight-color
 $orange:#F79250;
-$orange-light:#F6E2D5;
+$orange-light:#f9a873;
+$beige-warm:#F6E2D5;
+
+// footer-backGround-color
 $gray-dark:#312F28;
 
 
 // UI
 $primary-color: $purple-dark;
-$primary-light:$mauve-light;
+$primary-color-light-30:$mauve;
+$primary-color-light-60:$mauve-light;
 
 $secondary-color: $white-fade;
+$secondary-color-transparent: $white-fade-transparent;
 
 $highlight-color:$orange;
-$highlight-light:$orange-light;
+$highlight-color-light-20:$orange-light;
 
+$background-neutral-color:$beige-warm;
 $footer-backGround-color:$gray-dark;
-
-// $secondary-original-color:#fff6d0;
 
 
 //POLICES
-// $text-font: "Quicksand", sans-serif, ;
 $heading-font: "Pompiere", sans-serif;
 $text-font:"Noto Sans Mono", monospace;
-
-// $text-font: "IBM Plex Mono", monospace;
-// $text-font: "Roboto", sans-serif;
-// $text-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-// $fallback-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-
 
 //TAILLES
 $headerHeight: 6rem;

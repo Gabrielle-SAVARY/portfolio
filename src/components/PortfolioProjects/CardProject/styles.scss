@@ -12,13 +12,13 @@
 	margin: 1rem auto;
 	transition: 0.2s ease-in-out;
 	color: vars.$primary-color;
-	background-color: vars.$secondary-color;	
+	background-color: vars.$secondary-color;
 	border-radius: 0.5rem;
 
 	// RETRO DESIGN
 	border: 2px solid vars.$gray-dark;
 	// PRIMARY SHADOW
-		box-shadow:
+	box-shadow:
 		1px 1px 0 0 vars.$primary-color,
 		2px 2px 0 0 vars.$primary-color,
 		3px 3px 0 0 vars.$primary-color,
@@ -32,6 +32,8 @@
 	}
 
 	&__header {
+		border-bottom: 2px solid vars.$gray-dark;
+
 		&__image {
 			display: block;
 			width: 100%;
@@ -55,11 +57,11 @@
 			font-size: 2rem;
 			color: vars.$primary-color;
 			text-transform: uppercase;
-			text-shadow:
-			-0.1px -0.1px 0 vars.$primary-color,
-			0.1px -0.1px 0 vars.$primary-color,
-			-0.1px 0.1px 0 vars.$primary-color,
-			0.1px 0.1px 0 vars.$primary-color;
+			// text-shadow:
+			// 	-0.1px -0.1px 0 vars.$primary-color,
+			// 	0.1px -0.1px 0 vars.$primary-color,
+			// 	-0.1px 0.1px 0 vars.$primary-color,
+			// 	0.1px 0.1px 0 vars.$primary-color;
 		}
 
 		&__project-technologies {
@@ -73,13 +75,13 @@
 			&__tag {
 				min-width: 1.5rem;
 				padding: 3px 8px;
-				margin-top:4px;
+				margin-top: 4px;
 				font-size: 0.9rem;
 				font-weight: 600;
 				text-transform: capitalize;
-				background-color: vars.$mauve-light;
+				background-color: vars.$primary-color-light-60;
 				color: vars.$primary-color;
-				filter: brightness(1.25);	
+				filter: brightness(1.25);
 				border-radius: 10rem;
 				border: 2px solid vars.$gray-dark;
 				box-shadow:
@@ -118,59 +120,43 @@
 			padding: 0.5rem 1rem;
 			text-transform: uppercase;
 			gap: 8px;
-
-			text-shadow:
-			-0.1px -0.1px 0 vars.$primary-color,
-			0.1px -0.1px 0 vars.$primary-color,
-			-0.1px 0.1px 0 vars.$primary-color,
-			0.1px 0.1px 0 vars.$primary-color;
-
 			border-radius: 3px;
 			border: 2px solid vars.$gray-dark;
-
-			// BLACK SHADOW
-			// box-shadow:
-			// 	0.5px 1px 0 0 vars.$gray-dark,
-			// 	1.5px 2px 0 0 vars.$gray-dark,
-			// 	2.5px 3px 0 0 vars.$gray-dark,
-			// 	3.5px 4px 0 0 vars.$gray-dark,
-			// 	4.5px 5px 0 0 vars.$gray-dark,
-			// 	5.5px 6px 0 0 vars.$gray-dark;
-
-			// PRIMARY SHADOW
+			text-shadow:
+				-0.1px -0.1px 0 vars.$primary-color,
+				0.1px -0.1px 0 vars.$primary-color,
+				-0.1px 0.1px 0 vars.$primary-color,
+				0.1px 0.1px 0 vars.$primary-color;
 			box-shadow:
-			0.5px 1px 0 0 vars.$primary-color,
-			1.5px 2px 0 0 vars.$primary-color,
-			2.5px 3px 0 0 vars.$primary-color,
-			3.5px 4px 0 0 vars.$primary-color,
-			4.5px 5px 0 0 vars.$primary-color,
-			5.5px 6px 0 0 vars.$primary-color;
+				0.5px 1px 0 0 vars.$primary-color,
+				1.5px 2px 0 0 vars.$primary-color,
+				2.5px 3px 0 0 vars.$primary-color,
+				3.5px 4px 0 0 vars.$primary-color,
+				4.5px 5px 0 0 vars.$primary-color,
+				5.5px 6px 0 0 vars.$primary-color;
 
 			position: relative;
 			top: 0;
 			left: 0;
 			transform: rotateX(0) rotateY(0) rotateZ(0);
-			transition: box-shadow 0.35s, top 0.3s, left 0.3s, transform .4s;
+			transition: box-shadow 0.35s, top 0.3s, left 0.3s, transform .4s, background-color 0.25s;
 
 
 			&__code {
 				background-color: vars.$secondary-color;
 				color: vars.$primary-color;
-
 				&:hover {
-					background-color: vars.$primary-color;
-					color: vars.$secondary-color;
+					background-color: vars.$secondary-color;
+					color: vars.$primary-color;
 				}
 			}
 
 			&__demo {
-				background-color: vars.$highlight-color;
+				background-color: vars.$highlight-color-light-20;
 				color: vars.$primary-color;
 				&:hover {
-					// background-color: vars.$highlight-light;
+					background-color: vars.$highlight-color;
 					color: vars.$primary-color;
-					// transition: border-color 0.25s;
-					// transition: background-color 0.25s;
 				}
 			}
 		}
@@ -180,7 +166,7 @@
 			top: 6px;
 			left: 5.5px;
 			transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
-			transition: box-shadow .35s,top .3s,left .3s,transform .4s,outline-color .4s;		
+			transition: box-shadow .35s, top .3s, left .3s, transform .4s, outline-color .4s;
 
 			// BLACK SHADOW
 			// box-shadow:
@@ -193,13 +179,13 @@
 
 			// PRIMARY SHADOW
 			box-shadow:
-			0 0 0 0 vars.$primary-color,
-			0 0 0 0 vars.$primary-color,
-			0 0 0 0 vars.$primary-color,
-			0 0 0 0 vars.$primary-color,
-			0 0 0 0 vars.$primary-color,
-			0 0 0 0 vars.$primary-color;
-			
+				0 0 0 0 vars.$primary-color,
+				0 0 0 0 vars.$primary-color,
+				0 0 0 0 vars.$primary-color,
+				0 0 0 0 vars.$primary-color,
+				0 0 0 0 vars.$primary-color,
+				0 0 0 0 vars.$primary-color;
+
 		}
 	}
 

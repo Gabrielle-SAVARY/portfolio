@@ -43,7 +43,7 @@
 
 		&-text,
 		&-text a {
-			color: vars.$white-fade;
+			color: vars.$secondary-color;
 			letter-spacing: 1px;
 			font-size: 0.85rem;
 			@include mixin.breakpoint(desktop) {

@@ -24,7 +24,7 @@ function PortfolioProjects() {
 
   return (
     <section id="sectionPortfolioProjects" className="portfolio-projects">
-      <h2>MES PROJETS</h2>
+      <h2>Mes projets</h2>
       <div className="portfolio-projects__container">
         {projectsList.map((project) => (
           <CardProject
@@ -32,21 +32,6 @@ function PortfolioProjects() {
             myProject={project}
           />
         ))}
-
-        <CardProject
-          myProject={
-          {
-            id: 3,
-            name: 'Projet 3',
-            description: 'Description du projet 3',
-            technologies: [''],
-            imageLink: '',
-            githubLink: '',
-            demoLink: '',
-          }
-        }
-
-        />
       </div>
     </section>
   );

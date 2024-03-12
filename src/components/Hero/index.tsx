@@ -35,7 +35,7 @@ function Hero() {
             />
             <MyLink
               label="Voir mes projets"
-              path="#sectionPortfolio"
+              path="#sectionPortfolioProjects"
               target=""
               classColor="link--secondary"
               iconName=""

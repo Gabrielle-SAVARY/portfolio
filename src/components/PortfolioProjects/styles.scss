@@ -2,9 +2,10 @@
 @use '../../styles/vars';
 
 #sectionPortfolioProjects {
-	background-color: vars.$highlight-light;
+	background-color: vars.$background-neutral-color;
 	padding-top: calc(vars.$headerHeight + 2rem);
 	color: vars.$primary-color;
+
 
 	@include mixin.breakpoint(desktop) {
 		display: flex;
@@ -14,16 +15,33 @@
 	}
 }
 
-.portfolio-projects__container{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: center;
-	gap: 20px;
-	width: 100%;
+.portfolio-projects{
+	&__header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+		width: 100%;
 
-	@include mixin.breakpoint(desktop) {
-		max-width: 80%;
+		@include mixin.breakpoint(desktop) {
+			flex-direction: row;
+			gap: 10rem;
+		}
 	}
+
+	&__container{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+		width: 100%;
+	
+		@include mixin.breakpoint(desktop) {
+			max-width: 80%;
+		}
+	}
+
 }
 
