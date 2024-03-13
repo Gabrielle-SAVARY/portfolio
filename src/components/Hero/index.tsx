@@ -2,6 +2,7 @@ import HeroBackgroundImg from '../../assets/images/workspace-background.png';
 import PlanteBackground from '../../assets/images/plante.jpg';
 import MyLink from '../MyLink';
 import './styles.scss';
+import CardTechnoSvg from './CardTechnoSvg';
 
 function Hero() {
   return (
@@ -46,6 +47,15 @@ function Hero() {
         <div className="hero-img__container">
           <img className="hero-img__image" src={HeroBackgroundImg} alt="anime girl portrait with headphone" />
         </div>
+      </div>
+      <div className="card-techno__container">
+        <CardTechnoSvg title="javascript" />
+        <CardTechnoSvg title="typescript" />
+        <CardTechnoSvg title="react" />
+        <CardTechnoSvg title="sass" />
+        <CardTechnoSvg title="nodejs" />
+        <CardTechnoSvg title="postgresql" />
+        <CardTechnoSvg title="sequelize" />
       </div>
 
       <div className="custom-shape-divider-bottom-1709141769">
