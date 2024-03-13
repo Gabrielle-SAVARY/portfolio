@@ -1,9 +1,9 @@
 @use '../../styles/mixin';
 @use '../../styles/vars';
 
-#sectionTechno{
+#sectionTechno {
 	background-color: vars.$background-neutral-color;
-	padding-top: vars.$headerHeight;
+	padding-top: vars.$headerHeight;	
 	color: vars.$primary-color;
 
 	min-height: auto;
@@ -17,17 +17,33 @@
 	}
 }
 
+.techno {
+	&__container {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+		margin-top: 2rem;
+		background-color: vars.$secondary-color-transparent;
 
-.techno__container{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
+		@include mixin.breakpoint(desktop) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+		}
+	}
 
-	@include mixin.breakpoint(desktop) {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
+	&__separator {
+		max-height: 500px;
+		width: 100%;
+
+		&__img {
+			width: 100%;
+			height: fit-content;
+			max-height: 500px;
+			// max-height: 200px;
+			object-fit: contain repeat-x;
+		
+		}
 	}
 }

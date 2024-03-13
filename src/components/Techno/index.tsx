@@ -6,6 +6,7 @@ import logoSass from '../../assets/images/techno_logo/stack_sass.png';
 import logoNode from '../../assets/images/techno_logo/stack_nodeJs.png';
 import logoPostgreSQL from '../../assets/images/techno_logo/stack_postgreSQL.png';
 import logoSequelize from '../../assets/images/techno_logo/stack_sequelize.png';
+import waves from '../../assets/images/techno-background2.png';
 
 import './styles.scss';
 
@@ -21,6 +22,9 @@ function Techno() {
         <CardTechno thumbnail={logoNode} imgAlt="logo de la techno" title="Node" />
         <CardTechno thumbnail={logoPostgreSQL} imgAlt="logo de la techno" title="PostgreSQL" />
         <CardTechno thumbnail={logoSequelize} imgAlt="logo de la techno" title="Sequelize" />
+      </div>
+      <div className="techno__separator">
+        <img className="techno__separator__img" src={waves} alt="séparateur vagues colorées" />
       </div>
     </section>
   );
