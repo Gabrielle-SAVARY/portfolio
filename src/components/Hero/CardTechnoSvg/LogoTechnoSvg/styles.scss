@@ -1,0 +1,135 @@
+@use '../../../../styles/mixin';
+@use '../../../../styles/vars';
+
+
+.svg-logo {
+	width: 100%;
+	height: 100%;
+	border: 3px solid vars.$primary-color;
+	border-radius: 15px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: rotateX(0) rotateY(0) rotateZ(0);
+	transition: box-shadow 0.35s, top 0.3s, left 0.3s, transform .4s, fill 0.25s, background-color 0.25s, outline-color 0.4s;
+
+	box-shadow:
+		0 0 0 0 vars.$primary-color,
+		0 0 0 0 vars.$primary-color,
+		0 0 0 0 vars.$primary-color,
+		0 0 0 0 vars.$primary-color,
+		0 0 0 0 vars.$primary-color,
+		0 0 0 0 vars.$primary-color;
+
+
+	&:hover {
+		cursor: pointer;
+		top: -6px;
+		left: -5.5px;
+		transform: rotateX(5deg) rotateY(3deg) rotateZ(0.25deg);
+		transition: box-shadow .35s, top .3s, left .3s, transform .4s, outline-color .4s;
+
+		box-shadow:
+			0.5px 1px 0 0 vars.$primary-color,
+			1.5px 2px 0 0 vars.$primary-color,
+			2.5px 3px 0 0 vars.$primary-color,
+			3.5px 4px 0 0 vars.$primary-color,
+			4.5px 5px 0 0 vars.$primary-color,
+			5.5px 6px 0 0 vars.$primary-color;
+	}
+
+}
+
+
+// SVG original avec un bacckground coloré
+.javascript-black, .typescript-white, .sass-pink, .nodejs-black, .sequelize-blue-dark {
+	fill: vars.$primary-color;
+}
+
+.javascript-yellow {
+	fill: vars.$orange;
+}
+.svg-javascript:hover .javascript-yellow {
+	fill: #f0db4f;
+}
+.svg-javascript:hover .javascript-black {
+	fill: #323330;
+}
+
+.typescript-blue {
+	fill: vars.$mauve-light;
+}
+.svg-typescript:hover .typescript-blue {
+	fill: #017acb;
+}
+.svg-typescript:hover .typescript-white {
+	fill: #fff;
+}
+
+// SVG original sans bacckground 
+.svg-react, .svg-sass, .svg-nodejs, .svg-postgresql, .svg-sequelize {
+	padding:6px;
+	background-color: vars.$mauve-light;
+	&:hover {
+		background-color: transparent
+	}
+}
+
+
+.svg-react:hover .react-blue-dot {
+	fill: #61dafb;
+}
+.svg-react:hover .react-blue {
+	stroke: #61dafb;
+}
+.react-blue{
+	stroke:vars.$primary-color;
+}
+.react-blue-dot {
+	fill: vars.$primary-color;
+}
+
+.svg-sass:hover .sass-pink  {
+	fill: #CF649A;
+}
+
+.nodejs-green {
+	fill: vars.$primary-color;
+}
+.svg-nodejs:hover .nodejs-green {
+	fill: #539E43;
+}
+.svg-nodejs:hover .nodejs-black{
+	fill: #333;
+}
+
+.postgresql-black {
+	fill: vars.$primary-color;
+}
+.postgresql-blue {
+	fill: vars.$mauve;
+}
+.svg-postgresql:hover .postgresql-black {
+	fill: black;
+}
+.svg-postgresql:hover .postgresql-blue {
+	fill: #336791;
+}
+
+
+.svg-sequelize:hover .sequelize-blue-dark {
+	fill: #2F406A;
+}
+.sequelize-blue {
+	fill: vars.$mauve;
+}
+.svg-sequelize:hover .sequelize-blue {
+	fill: #2379BD;
+}
+
+.sequelize-blue-light {
+	fill: #dcd1d8;
+} 
+.svg-sequelize:hover .sequelize-blue-light {
+	fill: #03AFEF;
+} 
