@@ -1,0 +1,64 @@
+@use '../../../styles/mixin';
+@use '../../../styles/vars';
+
+
+.technoSvg__card {
+	width: 80px;
+	height: 80px;
+	border-radius: 8px;
+	margin: 4px;
+	padding: 0.5rem 0.5rem 0;
+
+	@include mixin.breakpoint(desktop) {
+		height: 120px;
+		width: 120px;
+	}
+
+	&__header {
+		height: 50px;
+		display: flex;
+		justify-content: center;
+
+		@include mixin.breakpoint(desktop) {
+			height: 80px;
+		}
+
+		&-img {
+			object-fit: cover;
+			margin: 0.5rem;
+		}
+	}
+
+	&__content {
+		display: none;
+		height: 30px;
+		padding-top: 0.5rem;
+		text-align: center;
+
+		@include mixin.breakpoint(desktop) {
+			height: 40px;
+		}
+
+		&-title {
+			font-family: vars.$text-font;
+			color: vars.$primary-color;
+			font-size: 0.7rem;
+			font-weight: 800;
+
+			@include mixin.breakpoint(desktop) {
+				font-size: 0.9rem;
+			}
+		}
+
+		&-text {
+			padding-top: 8px;
+			font-size: 0.8rem;
+			color: vars.$primary-color;
+		}
+	}
+}
+
+.technoSvg__card:hover>.technoSvg__card__content {
+	display: block;
+}
+
