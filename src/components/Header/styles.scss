@@ -32,7 +32,8 @@
 }
 
 .header--open a {
-	color: vars.$primary-color;	
+	color: vars.$primary-color;
+
 	&:hover {
 		color: vars.$secondary-color;
 	}
@@ -101,27 +102,27 @@
 
 	&__link {
 		transition: all 0.3s ease;
-		text-shadow:
-			-0.1px -0.1px 0 vars.$primary-color,
-			0.1px -0.1px 0 vars.$primary-color,
-			-0.1px 0.1px 0 vars.$primary-color,
-			0.1px 0.1px 0 vars.$primary-color;
+		// text-shadow:
+		// 	-0.1px -0.1px 0 vars.$primary-color,
+		// 	0.1px -0.1px 0 vars.$primary-color,
+		// 	-0.1px 0.1px 0 vars.$primary-color,
+		// 	0.1px 0.1px 0 vars.$primary-color;
+		-webkit-text-stroke: 1.5px vars.$primary-color;
 		font-size: 1.45rem;
 
 		@include mixin.breakpoint(desktop) {
-			font-size: 1.25rem;
+			font-size: 1.35rem;
 		}
 
 		@include mixin.breakpoint(desktopXL) {
-			font-size: 1.30rem;
+			font-size: 1.40rem;
 		}
 
-		&:hover {	
-			text-shadow:
-				-0.1px -0.1px 0 vars.$secondary-color,
-				0.1px -0.1px 0 vars.$secondary-color,
-				-0.1px 0.1px 0 vars.$secondary-color,
-				0.1px 0.1px 0 vars.$secondary-color;
+		&:hover {
+			-webkit-text-stroke: 1.25px vars.$secondary-color;
+			@include mixin.breakpoint(tablet) {
+				-webkit-text-stroke: 1.25px vars.$highlight-color;
+			}
 		}
 	}
 }
