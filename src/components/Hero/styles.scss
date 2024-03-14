@@ -170,23 +170,6 @@
 	}
 }
 
-
-.card-techno__container{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	margin-top: 2rem;
-	background-color: vars.$secondary-color-transparent;
-
-	@include mixin.breakpoint(desktop) {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-	}
-
-}
-
 .custom-shape-divider-bottom-1709141769 {
 	// position: absolute;
 	// bottom: 0;

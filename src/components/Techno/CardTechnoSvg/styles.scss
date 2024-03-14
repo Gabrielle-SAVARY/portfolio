@@ -1,0 +1,88 @@
+@use '../../../styles/mixin';
+@use '../../../styles/vars';
+
+
+.technoSvg__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+
+	height: calc(#{vars.$technoCardSvg-mobile} + 32px);
+	// width:calc(#{vars.$technoCardSvg-mobile} + 32px);
+	@include mixin.breakpoint(tablet) {
+		height: calc(#{vars.$technoCardSvg-tablet} + 32px);
+		width:calc(#{vars.$technoCardSvg-tablet} + 32px);
+	}
+	@include mixin.breakpoint(desktop) {
+		height: calc(#{vars.$technoCardSvg-desktop} + 32px);
+		width:calc(#{vars.$technoCardSvg-desktop} + 32px);
+	}
+	@include mixin.breakpoint(desktopXL) {
+		height: calc(#{vars.$technoCardSvg-desktopXL} + 32px);
+		width:calc(#{vars.$technoCardSvg-desktopXL} + 32px);
+	}
+
+	&__header {
+		height: vars.$technoCardSvg-mobile;
+		width: vars.$technoCardSvg-mobile;
+		display: flex;
+		justify-content: center;
+
+		border: 3.25px solid vars.$primary-color inset;
+		border-radius: 8px;
+
+		@include mixin.breakpoint(tablet) {
+			height: vars.$technoCardSvg-tablet;
+			width: vars.$technoCardSvg-tablet;
+		}
+		@include mixin.breakpoint(desktop) {
+			height: vars.$technoCardSvg-desktop;
+			width: vars.$technoCardSvg-desktop;
+		}
+		@include mixin.breakpoint(desktopXL) {
+			height: vars.$technoCardSvg-desktopXL;
+			width: vars.$technoCardSvg-desktopXL;
+		}
+		
+	}
+
+	&__content {
+		opacity: 0;
+		width:calc(#{vars.$technoCardSvg-mobile} + 32px);
+		text-align: center;
+		@include mixin.breakpoint(tablet) {
+			width:calc(#{vars.$technoCardSvg-tablet} + 32px);
+		}
+		@include mixin.breakpoint(desktop) {
+			width:calc(#{vars.$technoCardSvg-desktop} + 32px);
+		}
+		@include mixin.breakpoint(desktopXL) {
+			width:calc(#{vars.$technoCardSvg-desktopXL} + 32px);
+		}
+
+		&-title {
+			font-family: vars.$text-font;
+			color: vars.$primary-color;
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			font-weight: 800;
+			@include mixin.breakpoint(desktop) {
+				font-size: 0.9rem;
+			}
+		}
+
+		&-text {
+			padding-top: 8px;
+			font-size: 0.8rem;
+			color: vars.$primary-color;
+		}
+	}
+}
+
+.technoSvg__card__header:hover + .technoSvg__card__content {
+	opacity: 1;
+}
+
+

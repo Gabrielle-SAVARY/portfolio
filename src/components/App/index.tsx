@@ -10,7 +10,6 @@ function App() {
     <Layout>
       <main>
         <Hero />
-        <Techno />
         <PortfolioProjects />
         <About />
       </main>
