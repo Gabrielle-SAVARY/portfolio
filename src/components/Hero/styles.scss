@@ -25,19 +25,14 @@
 	display: flex;
 	flex-direction: column;
 	padding: 2rem 2rem 0;
-
 	@include mixin.breakpoint(desktop) {
 		flex-direction: row;	
-		max-width: 90%;		
-	}
-	@include mixin.breakpoint(desktop) {
 		padding: 3rem 3rem 0;
 		max-width: 80%;	
 	}
 
 	&__img-plante-background{
 		display: none;
-
 		@include mixin.breakpoint(desktop) {
 			display: block;
 			position: absolute;
@@ -51,9 +46,7 @@
 			left: 0;	
 			width: 192px;
 			height: 399px;
-		}
-
-	
+		}	
 	}
 }
 
@@ -159,14 +152,6 @@
 		min-height: 148px;
 		max-height: fit-content;
 		overflow: hidden;
-
-		@include mixin.breakpoint(tablet) {
-			// width: 65%;
-		}
-		@include mixin.breakpoint(desktop) {
-			// max-width: 80%;
-
-		}
 	}
 }
 

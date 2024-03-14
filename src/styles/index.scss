@@ -61,16 +61,17 @@ h1 {
   line-height: 125%;
 
   @include mixin.breakpoint(tablet) {
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 
   @include mixin.breakpoint(desktop) {
-    font-size: 4.25rem;
+    font-size: 4rem;
   }
-
   @include mixin.breakpoint(desktopXL) {
     font-size: 5rem;
   }
+
+
 }
 
 h2 {
@@ -93,7 +94,7 @@ h2 {
     font-size: 3rem;
   }
   @include mixin.breakpoint(desktopXL) {
-    font-size: 3.25rem;
+    font-size: 3.75rem;
   }
 }
 

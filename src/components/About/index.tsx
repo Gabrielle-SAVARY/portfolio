@@ -27,7 +27,7 @@ function About() {
               <img src={diamondImg} alt="dessin diamant" className="about__container__links__contact-link__img" />
               <MyLink
                 label="me contacter"
-                path="https://www.linkedin.com/in/gabrielle-savary/https://www.linkedin.com/in/gabrielle-savary/"
+                path="https://www.linkedin.com/in/gabrielle-savary/"
                 target="_blank"
                 classColor="link--primary"
                 iconName="linkedin"
