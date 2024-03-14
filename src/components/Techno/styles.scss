@@ -8,11 +8,15 @@
 	align-items: center;
 	margin-top: 2rem;
 	background-color: vars.$secondary-color-transparent;
+	width: 100%;
 
 	@include mixin.breakpoint(desktop) {
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-evenly;
-		
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0 3rem 0;
+		max-width: 80%;			
 	}
 }
