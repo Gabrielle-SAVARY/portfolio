@@ -10,38 +10,44 @@
 	@include mixin.breakpoint(desktop) {
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
 		align-items: center;
 	}
 }
 
-.portfolio-projects{
-	&__header{
+#sectionPortfolioProjects h2 {
+	margin-bottom: 3rem;
+	@include mixin.breakpoint(desktop) {
+		margin-bottom: 4rem;
+	}
+}
+
+.portfolio-projects {
+	&__header {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		gap: 1rem;
 		width: 100%;
-
 		@include mixin.breakpoint(desktop) {
 			flex-direction: row;
-			gap: 10rem;
+			gap: 6rem;
 		}
 	}
 
-	&__container{
+	&__container {
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
 		justify-content: center;
 		gap: 20px;
 		width: 100%;
-	
+		margin-bottom: 4rem;
+
 		@include mixin.breakpoint(desktop) {
 			max-width: 80%;
 		}
 	}
 
 }
-
