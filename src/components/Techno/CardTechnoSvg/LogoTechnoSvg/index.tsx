@@ -48,7 +48,7 @@ function LogoTechno({ technoName }: LogoTechnoSvgProps) {
         );
       case 'nodejs':
         return (
-          <svg className={svgClassName} width="2500" height="2500" viewBox="0 0 512 314" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+          <svg className={svgClassName} width="2500" height="2500" viewBox="0 0 512 314" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
             <defs>
               <linearGradient x1="68.188%" y1="17.487%" x2="27.823%" y2="89.755%" id="b">
                 <stop stopColor="#41873F" offset="0%" />
@@ -131,7 +131,7 @@ function LogoTechno({ technoName }: LogoTechnoSvgProps) {
         );
       case 'sequelize':
         return (
-          <svg className={svgClassName} width="2500px" height="2500px" viewBox="-20 0 296 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+          <svg className={svgClassName} width="2500px" height="2500px" viewBox="-20 0 296 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
             <g>
               <path className="sequelize-blue-dark" fill="#2F406A" d="M219.013,94.362 L219.013,200.956 L128.437,254.544 L127.618,255.289 L127.618,295.128 L128.437,295.9 L256,222.216 L256,73.684 L254.795,73.389 L218.832,93.495 L219.013,94.362" />
               <path className="sequelize-blue" d="M37.57,201.829 L128.437,254.544 L128.437,295.9 L0,221.925 L0,73.975 L1.318,73.776 L37.177,94.624 L37.57,95.818 L37.57,201.829" fill="#2379BD" />

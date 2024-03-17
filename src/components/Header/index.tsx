@@ -39,8 +39,8 @@ function Header() {
           <li><div className="header__navbar__menu-links__separator" /></li>
           <li>
             <div className="header__navbar__menu-links__social-media">
-              <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="primary" handleCloseMobileMenu={handleCloseMobileMenu} />
-              <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="primary" handleCloseMobileMenu={handleCloseMobileMenu} />
+              <SocialMedia mediaName="linkedin" mediaLink="https://www.linkedin.com/in/gabrielle-savary/" mediaIconColor="primary" />
+              <SocialMedia mediaName="github" mediaLink="https://github.com/Gabrielle-SAVARY?tab=repositories" mediaIconColor="primary" />
             </div>
           </li>
           { isMobileMenuOpen && (
