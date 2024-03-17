@@ -4,7 +4,7 @@
 		"name": "Portfolio",
 		"description":"Vous êtes actuellement sur mon portfolio, bonne navigation.",
 		"technologies":["React", "Typescript","Saas"],
-		"imageLink": "./src/assets/images/myProjectsImg/Logo-portofolio-white.png",
+		"imageLink": "../images/myProjectsImg/Logo-portofolio-white.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/portfolio",
 		"demoLink": ""
 	},
@@ -13,7 +13,7 @@
 		"name": "Pokédex rétro JS",
 		"description":"Parcourer avec nostalgie la première génération de pokémons. À défaut de les attraper, filtrer les tous ! ",
 		"technologies":["Javascript", "CSS"],
-		"imageLink": "./src/assets/images/myProjectsImg/pokedex-home_desktop.png",
+		"imageLink": "../images/myProjectsImg/pokedex-home_desktop.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/Pokedex-retro-js",
 		"demoLink": "https://gabrielle-savary.github.io/Pokedex-retro-js/"
 		
@@ -23,7 +23,7 @@
 		"name": "QuizOtron",
 		"description":"Le site de quiz où l'on devient créateur de ses propres quiz !",
 		"technologies":["React", "Typescript","Saas", "Node.js","PostgreSQL","Sequelize"],
-		"imageLink": "./src/assets/images/myProjectsImg/QuizOtron-homepage_desktop.png",
+		"imageLink": "../images/myProjectsImg/QuizOtron-homepage_desktop.png",
 		"githubLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front",
 		"demoLink": ""
 	}
