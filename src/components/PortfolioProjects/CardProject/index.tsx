@@ -43,17 +43,23 @@ function CardProject({
           code
           <AiFillGithub style={{ fontSize: '24px', color: 'inherit' }} />
         </a>
-        <a
-          href={demoLink}
-          className="card__footer__link card__footer__link__demo"
-          target="_blank"
-          rel="noreferrer"
-        >
-          demo
-          <FaPlay style={{ fontSize: '18px', color: 'inherit' }} />
-        </a>
+
+        {demoLink && demoLink !== '' ? (
+          <a
+            href={demoLink}
+            className="card__footer__link card__footer__link__demo"
+            target="_blank"
+            rel="noreferrer"
+          >
+            demo
+            <FaPlay style={{ fontSize: '18px', color: 'inherit' }} />
+          </a>
+        )
+          : null}
+
       </div>
     </article>
+
   );
 }
 
