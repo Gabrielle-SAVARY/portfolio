@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <a href="/">
+        <a href="/portfolio">
           <img className="footer__container__logo" src={portfolioLogo} alt="logo du portfolio avec initiales" />
         </a>
         <div className="footer__container__social-media">

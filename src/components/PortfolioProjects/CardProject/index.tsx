@@ -1,5 +1,8 @@
 import { AiFillGithub } from 'react-icons/ai';
 import { FaPlay } from 'react-icons/fa';
+import imgProject_Porfolio from '../../../assets/images/project_portofolio_logo-white.png';
+import imgProject_PoxedexRetroJS from '../../../assets/images/project_pokedex-retro-js_homepage_desktop.png';
+import imgProject_Quizotron from '../../../assets/images/project_quizotron_homepage_desktop.png';
 import { IMyProject } from '../../../@types/dataMyProject';
 
 import './styles.scss';
@@ -10,13 +13,26 @@ interface CardProjectProps {
 
 function CardProject({
   myProject: {
-    id, name, description, technologies, imageLink, githubLink, demoLink,
+    id, name, description, technologies, githubLink, demoLink,
   },
 }: CardProjectProps) {
+  // Affiche l'image du projet - utilisé car problème avec liens des img et fetch + gh-pages
+  const cardImage = (cardName: string) => {
+    switch (cardName) {
+      case 'Portfolio':
+        return imgProject_Porfolio;
+      case 'Pokédex rétro JS':
+        return imgProject_PoxedexRetroJS;
+      case 'QuizOtron':
+        return imgProject_Quizotron;
+      default:
+        return '#';
+    }
+  };
   return (
     <article className="card" id={`${id}-${name}`}>
       <div className="card__header">
-        <img className="card__header__image" src={imageLink} alt={name} />
+        <img className="card__header__image" src={cardImage(name)} alt={name} />
       </div>
       <div className="card__body">
         <h3 className="card__body__project-name">{name}</h3>

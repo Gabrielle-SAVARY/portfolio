@@ -25,7 +25,7 @@ function Header() {
 
   return (
     <header className={classnameHeader}>
-      <a href="/">
+      <a href="/portfolio">
         <img className={classnameHeaderLogo} src={portfolioLogo} alt="logo du portfolio avec initiales" />
       </a>
       <BtnMenuMobile
