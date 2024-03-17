@@ -1,7 +1,7 @@
 {
-  "homepage": "http://Gabrielle-SAVARY.github.io/portfolio",
+  "homepage": "https://gabrielle-savary.github.io/portfolio",
   "name": "portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
