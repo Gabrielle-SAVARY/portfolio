@@ -9,7 +9,7 @@ function PortfolioProjects() {
 
   const getAllProjects = async () => {
     try {
-      const response = await fetch('../../myprojects.json');
+      const response = await fetch('https://github.com/Gabrielle-SAVARY/portfolio/blob/main/public/myprojects.json');
       const data = await response.json();
       setProjectsList(data);
       console.log(data, 'data');
