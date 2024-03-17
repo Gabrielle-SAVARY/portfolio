@@ -9,7 +9,7 @@ function PortfolioProjects() {
 
   const getAllProjects = async () => {
     try {
-      const response = await fetch('../../assets/data/myprojects.json');
+      const response = await fetch('../../myprojects.json');
       const data = await response.json();
       setProjectsList(data);
       console.log(data, 'data');
