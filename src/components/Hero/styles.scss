@@ -9,8 +9,7 @@
 	padding: 0;
 	background-image: url('../../assets/images/hero-background.png');
 	background-repeat: repeat;
-	background-size: contain;	
-	
+	background-size: contain;		
 	@include mixin.breakpoint(desktop) {
 		display: flex;
 		justify-content: center;
@@ -58,9 +57,6 @@
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-
-	@include mixin.breakpoint(tablet) {}
-
 	@include mixin.breakpoint(desktop) {
 		align-items: flex-start;
 	}
@@ -71,14 +67,11 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 2.5rem;
-		margin: 2rem 0 3rem;
-
+		margin: 2rem 0 2.5rem;
 		@include mixin.breakpoint(tablet) {
 			width: 100%;
-			flex-direction: row;
-	
+			flex-direction: row;	
 		}
-
 		@include mixin.breakpoint(desktop) {
 			justify-content: flex-start;
 			align-items: center;
@@ -90,25 +83,6 @@
 		max-width: 100%;
 		&__title {
 			text-align: center;
-
-			// TITLE GRADIENT
-			/* Fallback: Set a background color. */
-			background-color: vars.$primary-color;
-
-			/* Create the gradient. */
-			background: linear-gradient(to right, vars.$primary-color, #802e4a, #af4852, #d76a52, vars.$highlight-color);
-
-			/* Set the background size and repeat properties. */
-			background-size: 100%;
-			background-repeat: repeat;
-
-			/* Use the text as a mask for the background. */
-			/* This will show the gradient as a text color rather than element bg. */
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			-moz-background-clip: text;
-			-moz-text-fill-color: transparent;
-
 			@include mixin.breakpoint(desktop) {
 				text-align: unset;
 			}
@@ -120,9 +94,10 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
-		gap: 1rem;
-		margin: 2.5rem 0 1.25rem 0;
+		gap: 0.5rem;
+		margin-top: 2.5rem;
 		text-align: left;
+		background-color: vars.$white-fade-transparent;
 	}
 }
 
@@ -132,7 +107,6 @@
 		justify-content: center;
 		align-items: center;
 		width: 100%;
-
 		@include mixin.breakpoint(desktop) {
 			overflow: hidden;
 			min-width: 50%;

@@ -11,7 +11,7 @@ function Hero() {
         <img src={PlanteBackground} alt="plante en pot suspendue" className="hero__container__img-plante-background" />
         <div className="presentation">
           <div className="presentation__heading">
-            <h1 className="presentation__heading__title">
+            <h1 className="presentation__heading__title heading-gradient">
               Développeuse web
               <br />
               <em className="font-accent__heading">Javascript Fullstack</em>
@@ -19,11 +19,14 @@ function Hero() {
           </div>
           <div className="presentation__texts">
             <p className="presentation__text__paragraph">
-              Bienvenue sur mon portfolio !
-              <br />
-              Je m&apos;appelle Gabrielle Savary et je travaille sur un environnement fullstack javascript.
-              <br />
-              <em className="font-accent__text">Je suis à la recherche d&apos;une alternance en 2024.</em>
+              Je m&apos;appelle
+              {' '}
+              <em className="font-accent__text">Gabrielle Savary</em>
+              {' '}
+              et je travaille sur un environnement fullstack javascript.
+            </p>
+            <p className="presentation__text__paragraph">
+              <em className="font-accent__text">Je suis à la recherche d&apos;une opportunité professionnelle en alternance ou en CDI.</em>
             </p>
           </div>
           <div className="presentation__links">

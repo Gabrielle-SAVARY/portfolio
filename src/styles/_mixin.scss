@@ -7,5 +7,7 @@
         @media (min-width: 992px) { @content; }
     } @else if $point == desktopXL {
         @media (min-width: 1400px) { @content; }
+    } @else if $point == desktopXXL {
+        @media (min-width: 2000px) { @content; }
     }
 }
