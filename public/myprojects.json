@@ -24,7 +24,7 @@
 		"description":"Le site de quiz où l'on devient créateur de ses propres quiz !",
 		"technologies":["React", "Typescript","Saas", "Node.js","PostgreSQL","Sequelize"],
 		"imageLink": "../../assets/images/project_quizotron_homepage_desktop.png",
-		"githubLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front",
+		"githubLink": "https://github.com/Gabrielle-SAVARY/QuizOtron-Front/tree/dev",
 		"demoLink": "https://youtu.be/XAlN5DYLVeI"
 	}
 ]
