@@ -1,4 +1,3 @@
-import CV from '../../assets/CV PORTFOLIO développeur web .pdf';
 import diamondImg from '../../assets/images/gem-diamond.png';
 import portraitImage from '../../assets/images/portrait-vintage.png';
 import MyLink from '../MyLink';
@@ -72,7 +71,7 @@ function About() {
             </div>
             <MyLink
               label="Télécharger mon cv"
-              path={CV}
+              path="https://drive.google.com/file/d/1jjuhRfdskOkPJ3IXLeNMgEBuMR6mSugf/view?usp=drive_link"
               target="_blank"
               classColor="link--secondary"
               iconName=""
