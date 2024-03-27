@@ -27,7 +27,7 @@ function About() {
             <div className="about__infos-container__paragraph__timeline">
               <h4 className="about__infos-container__paragraph__timeline-date heading-gradient">Décembre 2022</h4>
               <p className="about__infos-container__text">
-                Je décide de me reconvertir pour continuer se qui m&apos;avait passionnée.
+                Je décide de me reconvertir pour continuer ce qui m&apos;avait passionnée.
                 <br />
                 Grâce à une formation de 6 mois chez O&apos;clock j'ai acquis un socle de compétences en développement javascript.
               </p>
