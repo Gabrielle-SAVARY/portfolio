@@ -1,5 +1,9 @@
+import { AiFillExperiment } from 'react-icons/ai';
+import { HiMiniCodeBracketSquare } from 'react-icons/hi2';
+import { IoSchoolSharp } from 'react-icons/io5';
 import diamondImg from '../../assets/images/gem-diamond.png';
 import portraitImage from '../../assets/images/portrait-vintage.png';
+
 import MyLink from '../MyLink';
 import './styles.scss';
 
@@ -7,12 +11,13 @@ function About() {
   return (
     <section id="sectionAbout" className="section-about">
       <div className="about">
-        <div className="about__img-container">
+        {/* <div className="about__img-container">
           <img className="about__img-container__img" src={portraitImage} alt="portrait de profil version animée d'une fille avec un caque audio" />
-        </div>
+        </div> */}
         <div className="about__infos-container">
           <h2 className="about__infos-container__title">À propos</h2>
-          <div className="about__infos-container__paragraph">
+
+          {/* <div className="about__infos-container__paragraph">
             <h3 className="about__infos-container__paragraph__title heading-gradient">Mon parcours</h3>
             <p className="about__infos-container__text">
               En bref, j&apos;ai décidé de
@@ -40,18 +45,26 @@ function About() {
                 après être passée devant un jury de professionnels.
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="about__infos-container__paragraph">
-            <h3 className="about__infos-container__paragraph__title heading-gradient">Mon objectif en 2024</h3>
+            {/* <h3 className="about__infos-container__paragraph__title heading-gradient">Mon objectif en 2024</h3>
             <p className="about__infos-container__text">
               Je souhaite apporter mon dynamisme au sein d&apos;une équipe qui me permettra de continuer à évoluer.
-            </p>
-            <p className="about__infos-container__text">
+            </p> */}
+            {/* <p className="about__infos-container__text">
               Les compétences ne sont pas statiques, elles évoluent constamment.
               <br />
               Bien qu&apos;encore à l&apos;état brut,
               {' '}
               <em className="font-accent__text">mes compétences vont être façonnées et polies en entreprise</em>
+              .
+            </p> */}
+            <p className="about__infos-container__text">
+              {/* Les compétences ne sont pas statiques, elles évoluent constamment.
+              <br />
+              Bien qu&apos;encore à l&apos;état brut,
+              {' '} */}
+              <em className="font-accent__text"> Telles des gemmes, les compétences en développement web se façonnent et se polies en entreprise</em>
               .
             </p>
           </div>

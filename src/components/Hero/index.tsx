@@ -25,9 +25,9 @@ function Hero() {
               {' '}
               et je travaille sur un environnement fullstack javascript.
             </p>
-            <p className="presentation__text__paragraph">
+            {/* <p className="presentation__text__paragraph">
               <em className="font-accent__text">Je suis à la recherche d&apos;une opportunité professionnelle en alternance ou en CDI.</em>
-            </p>
+            </p> */}
           </div>
           <div className="presentation__links">
             <MyLink
