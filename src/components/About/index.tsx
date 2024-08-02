@@ -1,8 +1,8 @@
-import { AiFillExperiment } from 'react-icons/ai';
-import { HiMiniCodeBracketSquare } from 'react-icons/hi2';
-import { IoSchoolSharp } from 'react-icons/io5';
+// import { AiFillExperiment } from 'react-icons/ai';
 import diamondImg from '../../assets/images/gem-diamond.png';
-import portraitImage from '../../assets/images/portrait-vintage.png';
+// import { HiMiniCodeBracketSquare } from 'react-icons/hi2';
+// import { IoSchoolSharp } from 'react-icons/io5';
+// import portraitImage from '../../assets/images/portrait-vintage.png';
 
 import MyLink from '../MyLink';
 import './styles.scss';

@@ -1,5 +1,4 @@
 import About from '../About';
-import About2 from '../About2';
 import Hero from '../Hero';
 import Layout from '../Layout';
 import PortfolioProjects from '../PortfolioProjects';
