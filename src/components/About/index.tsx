@@ -82,13 +82,13 @@ function About() {
                 iconName="linkedin"
               />
             </div>
-            <MyLink
+            {/* <MyLink
               label="Télécharger mon cv"
               path="https://drive.google.com/file/d/1jjuhRfdskOkPJ3IXLeNMgEBuMR6mSugf/view?usp=drive_link"
               target="_blank"
               classColor="link--secondary"
               iconName=""
-            />
+            /> */}
             <MyLink
               label="mon github"
               path="https://github.com/Gabrielle-SAVARY?tab=repositories"
